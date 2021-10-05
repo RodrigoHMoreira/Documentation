@@ -1,0 +1,19 @@
+.Menu {
+    height:400px;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+  ul {
+    list-style: none;
+}
+ul li {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+ul li:hover {
+    background-color: #167322;
+    color: #ffffff;
+  }
