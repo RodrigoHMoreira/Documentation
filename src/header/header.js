@@ -5,7 +5,7 @@ import Divider from '@mui/material/Divider';
 import Link from '@mui/material/Link';
 
 import logo from '../images/logoMybots.png'
-import '../images/image.css'
+import './header.css'
 
 const useStyles = makeStyles({
 
@@ -15,6 +15,7 @@ const useStyles = makeStyles({
   },
 
   divider:{
+    width:'100vw',
     height:25,
   }
 
