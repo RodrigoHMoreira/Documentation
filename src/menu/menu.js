@@ -14,11 +14,10 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const useStyles = makeStyles({
 
-    roots:{
-      marginTop: 25,
-      marginLeft:25,
-      marginRight:5,
-      border:'none'
+  roots:{
+    marginTop: 25,
+    marginLeft:25,
+    marginRight:5
     },
 
     link:{
@@ -29,7 +28,6 @@ const useStyles = makeStyles({
     },
 
     item:{
-        background: 'transparent',
         '&:hover': {
            background: '#9e9e9e'
         }
@@ -40,7 +38,6 @@ const useStyles = makeStyles({
       
     },
     summary:{
-      background: 'transparent',
       '&:hover': {
          background: '#e0e0e0'
       }
@@ -77,7 +74,7 @@ export default function MenuDoc(props) {
               > 
                 <SearchIcon className="IconButton" />
             </TextField>
-          </div>
+          </div><br/>
           <div className="Chapter:1">
               <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary

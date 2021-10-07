@@ -1,0 +1,15 @@
+#Header{
+    height:100px;
+}
+
+#Menu{
+    width: 15%;
+    float: left;
+}
+
+#Content{
+    margin-left: 240px;
+    margin-right: 24px;
+    text-align:justify;
+    font-size:18;
+}

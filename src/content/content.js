@@ -1,25 +1,11 @@
 import React from "react";
 
-import { makeStyles } from '@material-ui/styles';
-
-const useStyles = makeStyles({
-
-    roots:{
-        color:'#4f4f4f',
-        textAlign:'justify',
-        fontSize:18,
-        height: '325vh'
-    }
-})
-
-
 export default function ContentDoc() {
-    const classes = useStyles();
 
     return(
-        <div className={classes.roots}>
+        <div className='roots'>
             <div id="One">
-                <h1>One</h1><br/>
+                <h1>One</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris, 
                     consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendisse 
                     dapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, 
@@ -29,9 +15,9 @@ export default function ContentDoc() {
                     pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut 
                     proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque 
                     dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.</p>
-            </div><br/>
+            </div>
             <div id="Two">
-                <h1>Two</h1><br/>
+                <h1>Two</h1>
                 <p>Magnis dictumst maecenas vitae nibh cursus fringilla, orci curae tristique nisi. Vehicula tempus senectus penatibus 
                     scelerisque proin blandit pulvinar donec hendrerit, condimentum habitasse porttitor interdum malesuada diam risus 
                     venenatis sapien, nibh enim a vivamus iaculis natoque augue nostra. Ad ex volutpat eleifend sapien sollicitudin penatibus, 
@@ -42,9 +28,9 @@ export default function ContentDoc() {
                     cubilia nisl conubia neque, senectus in maximus odio morbi consequat. Felis per mus aptent aliquet etiam placerat 
                     elementum vehicula finibus vulputate, adipiscing malesuada erat ad risus penatibus lobortis id dolor, facilisi 
                     scelerisque lorem donec imperdiet fusce posuere sagittis habitant. Ultricies in sem duis nam libero, ac amet odio facilisi.</p>
-            </div><br/>
+            </div>
             <div id="Three">
-                <h1>Three</h1><br/>
+                <h1>Three</h1>
                 <p>Ipsum habitant nibh litora erat lobortis feugiat inceptos fames tincidunt etiam, rhoncus suscipit turpis justo facilisi at 
                     congue donec est rutrum, class dictum ridiculus vitae viverra amet ut placerat nunc. Cras massa faucibus ultrices 
                     convallis ligula etiam dolor odio, bibendum primis phasellus parturient risus pulvinar nostra sagittis sodales, est 
@@ -55,9 +41,9 @@ export default function ContentDoc() {
                     maecenas elementum ac volutpat, id mattis primis ut leo nostra eleifend massa urna auctor, nascetur augue ullamcorper 
                     nisi sodales dictumst euismod magnis. Suspendisse a ultrices aptent urna luctus torquent nascetur at morbi, commodo 
                     penatibus lorem dignissim quam integer erat mi, aliquet porttitor rutrum ligula class habitasse pulvinar nostra.</p>
-            </div><br/>      
+            </div>      
             <div id="Four">
-                <h1>Four</h1><br/>        
+                <h1>Four</h1>        
                 <p>Cursus lobortis maximus orci rhoncus euismod quis torquent iaculis quisque ultrices, vulputate bibendum ligula potenti 
                     aptent elit faucibus praesent vitae turpis, felis sagittis penatibus integer pretium senectus rutrum id curae. Dignissim 
                     massa non hac porta tellus fringilla dictumst tempus consectetur, purus pellentesque quisque aenean orci faucibus nam 
@@ -67,9 +53,9 @@ export default function ContentDoc() {
                     sed, litora elementum lacus mi curae id quisque. Congue leo orci suscipit magnis risus torquent ullamcorper pulvinar 
                     feugiat cubilia integer, fermentum sapien duis elit eget taciti parturient ut quisque natoque habitant adipiscing, 
                     etiam mus eu montes volutpat aptent mauris nisl rhoncus sodales.</p>
-            </div><br/>
+            </div>
             <div id="Five">
-                <h1>Five</h1><br/>
+                <h1>Five</h1>
                 <p>Urna cras metus phasellus proin litora lacus at, congue vulputate torquent sed massa ultrices tempus, nibh euismod 
                     finibus elementum faucibus volutpat. Etiam maximus phasellus fusce dignissim per quis aliquam, faucibus primis facilisis
                      massa ex cubilia praesent dui, erat congue et in ornare tincidunt. Leo lacinia ex himenaeos mattis bibendum luctus, ante 
@@ -77,9 +63,9 @@ export default function ContentDoc() {
                      sodales malesuada lacinia, eu convallis aliquam ac ultricies tellus scelerisque, proin venenatis magnis cursus maximus 
                      nascetur urna. Penatibus nam et posuere rhoncus consequat conubia facilisis, elementum lorem odio augue placerat vehicula, 
                      cras urna aliquet consectetur adipiscing ridiculus.</p>
-            </div><br/>
+            </div>
             <div id="Six">
-                <h1>Six</h1><br/>
+                <h1>Six</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris, 
                     consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendisse 
                     dapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, 
@@ -89,9 +75,9 @@ export default function ContentDoc() {
                     venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus 
                     phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt 
                     odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.</p>
-            </div><br/>
+            </div>
             <div id="Seven">
-                <h1>Seven</h1><br/>
+                <h1>Seven</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris, 
                     consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendisse 
                     dapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, 
@@ -101,9 +87,9 @@ export default function ContentDoc() {
                     pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut 
                     proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque 
                     dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.</p>
-            </div><br/>
+            </div>
             <div id="Eight">
-                <h1>Eight</h1><br/>
+                <h1>Eight</h1>
                 <p>Magnis dictumst maecenas vitae nibh cursus fringilla, orci curae tristique nisi. Vehicula tempus senectus penatibus 
                     scelerisque proin blandit pulvinar donec hendrerit, condimentum habitasse porttitor interdum malesuada diam risus 
                     venenatis sapien, nibh enim a vivamus iaculis natoque augue nostra. Ad ex volutpat eleifend sapien sollicitudin penatibus, 
@@ -114,9 +100,9 @@ export default function ContentDoc() {
                     cubilia nisl conubia neque, senectus in maximus odio morbi consequat. Felis per mus aptent aliquet etiam placerat 
                     elementum vehicula finibus vulputate, adipiscing malesuada erat ad risus penatibus lobortis id dolor, facilisi 
                     scelerisque lorem donec imperdiet fusce posuere sagittis habitant. Ultricies in sem duis nam libero, ac amet odio facilisi.</p>
-            </div><br/>      
+            </div>      
             <div id="Nine">
-                <h1>Nine</h1><br/>        
+                <h1>Nine</h1>        
                 <p>Cursus lobortis maximus orci rhoncus euismod quis torquent iaculis quisque ultrices, vulputate bibendum ligula potenti 
                     aptent elit faucibus praesent vitae turpis, felis sagittis penatibus integer pretium senectus rutrum id curae. Dignissim 
                     massa non hac porta tellus fringilla dictumst tempus consectetur, purus pellentesque quisque aenean orci faucibus nam 
@@ -126,9 +112,9 @@ export default function ContentDoc() {
                     sed, litora elementum lacus mi curae id quisque. Congue leo orci suscipit magnis risus torquent ullamcorper pulvinar 
                     feugiat cubilia integer, fermentum sapien duis elit eget taciti parturient ut quisque natoque habitant adipiscing, 
                     etiam mus eu montes volutpat aptent mauris nisl rhoncus sodales.</p>
-            </div><br/>
+            </div>
             <div id="Ten">
-                <h1>Ten</h1><br/>
+                <h1>Ten</h1>
                 <p>Cursus lobortis maximus orci rhoncus euismod quis torquent iaculis quisque ultrices, vulputate bibendum ligula potenti 
                     aptent elit faucibus praesent vitae turpis, felis sagittis penatibus integer pretium senectus rutrum id curae. Dignissim 
                     massa non hac porta tellus fringilla dictumst tempus consectetur, purus pellentesque quisque aenean orci faucibus nam 
@@ -138,9 +124,9 @@ export default function ContentDoc() {
                     sed, litora elementum lacus mi curae id quisque. Congue leo orci suscipit magnis risus torquent ullamcorper pulvinar 
                     feugiat cubilia integer, fermentum sapien duis elit eget taciti parturient ut quisque natoque habitant adipiscing, 
                     etiam mus eu montes volutpat aptent mauris nisl rhoncus sodales.</p>            
-            </div><br/>
+            </div>
             <div id="Eleven">
-                <h1>Eleven</h1><br/>        
+                <h1>Eleven</h1>        
                 <p>Urna cras metus phasellus proin litora lacus at, congue vulputate torquent sed massa ultrices tempus, nibh euismod 
                     finibus elementum faucibus volutpat. Etiam maximus phasellus fusce dignissim per quis aliquam, faucibus primis facilisis
                      massa ex cubilia praesent dui, erat congue et in ornare tincidunt. Leo lacinia ex himenaeos mattis bibendum luctus, ante 
@@ -148,9 +134,9 @@ export default function ContentDoc() {
                      sodales malesuada lacinia, eu convallis aliquam ac ultricies tellus scelerisque, proin venenatis magnis cursus maximus 
                      nascetur urna. Penatibus nam et posuere rhoncus consequat conubia facilisis, elementum lorem odio augue placerat vehicula, 
                      cras urna aliquet consectetur adipiscing ridiculus.</p>            
-            </div><br/>
+            </div>
             <div id="Twelve">
-                <h1>Twelve</h1><br/>
+                <h1>Twelve</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris, 
                     consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendisse 
                     dapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, 
@@ -160,7 +146,7 @@ export default function ContentDoc() {
                     venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus 
                     phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt 
                     odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.</p>            
-                </div><br/>
+                </div>
         </div>
 
     )
