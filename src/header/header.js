@@ -42,8 +42,8 @@ export default function HeaderDoc({ theme, toggleTheme, setTheme }) {
   theme === "dark"
     ? 
       true
-      
-    : false
+    : 
+     false
 
   return (
     <div className={classes.roots}>

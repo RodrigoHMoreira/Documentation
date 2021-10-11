@@ -32,20 +32,7 @@ export default function Index() {
         </div>
 
         <div id="Menu">
-          <MenuDoc
-            one={"One"}
-            two={"Two"}
-            three={"Three"}
-            four={"Four"}
-            five={"Five"}
-            six={"Six"}
-            seven={"Seven"}
-            eight={"Eight"}
-            nine={"Nine"}
-            ten={"Ten"}
-            eleven={"Eleven"}
-            twelve={"Twelve"}
-            theme={theme}
+          <MenuDoc theme={theme}
           />
         </div>
 
