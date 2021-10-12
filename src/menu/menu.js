@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }from "react";
 
 import { makeStyles } from '@material-ui/styles';
 import MenuItem from '@mui/material/MenuItem';
@@ -61,6 +61,12 @@ export default function MenuDoc(props) {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const menuLinks = document.querySelectorAll('[href={`#`}]');
+    
+  useEffect(() => {
+    console.log(menuLinks)
+  },[]);
 
       return (
         <div className={classes.roots}>
