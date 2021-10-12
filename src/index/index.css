@@ -7,7 +7,7 @@
   }
 
 #Header{
-    height:100px;
+    height:80px;
 }
 
 #Menu{
@@ -16,7 +16,7 @@
 }
 
 #Content{
-    margin-left: 240px;
+    margin-left: 260px;
     margin-right: 24px;
     text-align:justify;
     font-size:18;

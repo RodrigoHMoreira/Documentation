@@ -4,7 +4,7 @@ export default createGlobalStyle`
 *,
 *::after,
 *::before {
-box-sizing: border-box;  
+box-sizing: border-box; 
 }
 body {
   background: ${({ theme }) => theme.body};

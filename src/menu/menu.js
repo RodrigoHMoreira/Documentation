@@ -1,58 +1,53 @@
-import React, { useEffect }from "react";
+import React, { useEffect, useState } from "react";
 
-import { makeStyles } from '@material-ui/styles';
-import MenuItem from '@mui/material/MenuItem';
-import FolderOpenIcon from '@mui/icons-material/FolderOpen';
-import Link from '@mui/material/Link';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import TextField from '@mui/material/TextField';
-import SearchIcon from '@mui/icons-material/Search';
+import { makeStyles } from "@material-ui/styles";
+import MenuItem from "@mui/material/MenuItem";
+import FolderOpenIcon from "@mui/icons-material/FolderOpen";
+import Link from "@mui/material/Link";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import TextField from "@mui/material/TextField";
+import SearchIcon from "@mui/icons-material/Search";
+import { TwelveMpOutlined } from "@mui/icons-material";
 
 const useStyles = makeStyles({
-
-  roots:{
+  root: {
+    width:'100%',
     marginTop: 25,
-    marginLeft:25,
-    marginRight:5
-    },
+    marginLeft: 25,
+    marginRight: 0,
+  },
 
-    link:{
-      color:'#4f4f4f',
-      '&:hover': {
-        color:'#ffffff'
-      }
-    },
+  link: {
+    margin:0,
+    padding:0,
+    color: "#4f4f4f",
+  },
 
-    item:{
-        '&:hover': {
-           background: '#9e9e9e'
-        }
-    },
+  typography: {
+    color: "#4f4f4f",
+  },
 
-    typography:{
-      color:'#4f4f4f',
-      
+  summary: {
+    "&:hover": {
+      background: "#bdbdbd",
     },
-    summary:{
-      '&:hover': {
-         background: '#e0e0e0'
-      }
-    }
-})
+  },
+  
+});
 
 export default function MenuDoc(props) {
-
-  const {one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve} = props
+  const {theme} = props;
 
   const classes = useStyles();
-  
-  const [expanded, setExpanded] = React.useState(false);
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [search, setSearch] = React.useState('');
+
+  const [expanded, setExpanded] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [search, setSearch] = useState('');
+  const [chapterDef, setChapterDef] = useState(['']);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -62,185 +57,128 @@ export default function MenuDoc(props) {
     setAnchorEl(null);
   };
 
-  const menuLinks = document.querySelectorAll('[href={`#`}]');
-    
-  useEffect(() => {
-    console.log(menuLinks)
-  },[]);
+  const defineTabTheme =
+    theme === "dark"
+      ? {
+          backgroundColor: "#111",
+          color:"#111",
+          border: "1px #4f4f4f solid",
+        }
+      : 
+      {
+        border: "1px #d0d0d0 solid", 
+        borderWidth: 'thin'
+      };
 
-      return (
-        <div className={classes.roots}>
-           <div className="btnPesquisar">
-            <TextField 
-              size="small" 
-              placeholder="Pesquisar..." 
-              variant="outlined" 
-              className="inputSearch" 
-              onChange={(e) => setSearch(e.target.value)} 
-              > 
-                <SearchIcon className="IconButton" />
-            </TextField>
-          </div><br/>
-          <div className="Chapter:1">
-              <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                <AccordionSummary
-                  className={classes.summary}
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1bh-content"
-                  id="panel1bh-header"
-                >
-                  <Typography className={classes.typography}>
-                      <FolderOpenIcon sx={{color:'Blue'}}/>Chapter:1
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                    <div className={classes.item}>
-                          <Link href={`#${one}`} className={classes.link} underline="none" color="default">
-                            <MenuItem  onClick={handleClose}> 
-                              One
-                            </MenuItem>
-                          </Link>
-                      </div>
-                      <div className={classes.item}>
-                        <Link href={`#${two}`} className={classes.link} underline="none" color="default">
-                          <MenuItem  onClick={handleClose}>
-                            Two
-                          </MenuItem>
-                        </Link>
-                      </div>
-                      <div className={classes.item}>
-                        <Link href={`#${three}`} className={classes.link} underline="none" color="default">
-                          <MenuItem  onClick={handleClose}>
-                            Three
-                          </MenuItem>
-                        </Link>
-                    </div>
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </div>
+  const defineTabThemeMenu = 
+    theme === "dark" 
+    ? {
+      border: "0.5px #4f4f4f solid", 
+      borderRadius:1, 
+      borderWidth: 'thin',
+      ":hover":{background:"#212121"
+      }
+    } : 
+      {
+        border: "1px #d0d0d0 solid", 
+        borderRadius:1, 
+        borderWidth: 'thin',
+        ":hover":{
+          background:"#bdbdbd"
+        }
+      }
 
-            <div className="Chapter:2">
-              <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                <AccordionSummary
-                 className={classes.summary}
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel2bh-content"
-                  id="panel2bh-header"
-                >
-                  <Typography className={classes.typography}>
-                      <FolderOpenIcon sx={{color:'red'}}/>Chapter:2
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                    <div className={classes.item}>
-                      <Link href={`#${four}`} className={classes.link} underline="none" color="default">
-                        <MenuItem  onClick={handleClose}> 
-                          Four
-                        </MenuItem>
-                      </Link>
-                      </div>
-                      <div className={classes.item}>
-                        <Link href={`#${five}`} className={classes.link} underline="none" color="default">
-                          <MenuItem  onClick={handleClose}> 
-                            Five
-                          </MenuItem>
-                        </Link>
-                      </div>
-                      <div className={classes.item}>
-                        <Link href={`#${six}`} className={classes.link} underline="none" color="default">
-                          <MenuItem  onClick={handleClose}> 
-                            Six
-                          </MenuItem>
-                        </Link>
-                    </div>
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </div>
+  const defineTabThemeSumary = 
+     theme === "dark" 
+     ? {
+       ":hover":{
+         background:"#424242"
+        }
+      } : 
+        {
+          ":hover":{
+            background:""
+          }
+        }
 
-            <div className="Chapter:3">
-              <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                <AccordionSummary
-                  className={classes.summary}
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel3bh-content"
-                  id="panel3bh-header"
-                >
-                  <Typography className={classes.typography}>
-                      <FolderOpenIcon sx={{color:'Green'}}/>Chapter:3
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                    <div className={classes.item}>
-                      <Link href={`#${seven}`} className={classes.link} underline="none" color="default">
-                          <MenuItem  onClick={handleClose}> 
-                            Seven
-                          </MenuItem>
-                        </Link>
-                      </div>
-                      <div className={classes.item}>
-                      <Link href={`#${eight}`} className={classes.link} underline="none" color="default">
-                          <MenuItem  onClick={handleClose}> 
-                            Eight
-                          </MenuItem>
-                      </Link>
-                      </div>
-                      <div className={classes.item}>
-                        <Link href={`#${nine}`} className={classes.link} underline="none" color="default">
-                          <MenuItem  onClick={handleClose}> 
-                            Nine
-                          </MenuItem>
-                        </Link>
-                    </div>
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </div>
+const array = [{
+  title:['Chapter 1',' Chapter 2', 'Chapter 3', 'Chapter 4'],
+  chapter:[{
+    chapter1:['one', 'two', 'three'],
+    chapter2:['four', 'five', 'six'],
+    chapter3:['seven', 'eight', 'nine'],
+    chapter4:['ten', 'eleven', 'twelve']
+  }],
+  panel:['panel1', 'panel2', 'panel3', 'panel4']
+}]
 
-            <div className="Chapter:4">
-              <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                <AccordionSummary
-                  className={classes.summary}
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel4bh-content"
-                  id="panel4bh-header"
-                >
-                  <Typography className={classes.typography}>
-                      <FolderOpenIcon sx={{color:'orange'}}/>Chapter:4
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                  <div className={classes.item}>
-                    <Link href={`#${ten}`} className={classes.link} underline="none" color="default">
-                      <MenuItem  onClick={handleClose}> 
-                        Ten
-                      </MenuItem>
-                      </Link>
-                    </div>
-                    <div className={classes.item}>
-                      <Link href={`#${eleven}`} className={classes.link} underline="none" color="default">
-                        <MenuItem  onClick={handleClose}> 
-                          Eleven
-                        </MenuItem>
-                      </Link>                    
-                    </div>
-                    <div className={classes.item}>
-                      <Link href={`#${twelve}`} className={classes.link} underline="none" color="default">
-                        <MenuItem  onClick={handleClose}> 
-                          Twelve
-                        </MenuItem>
-                      </Link>                  
-                    </div>
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </div>
+  return (
+            array.map((item)=>{
+              return(
 
-        </div>
-      );
-    }
+            <div className={classes.root}>
+              <div className="btnPesquisar">
+                <TextField
+                  size="small"
+                  placeholder="Pesquisar..."
+                  className="inputSearch"
+                  sx={theme === "dark" ? {border: "0.5px #4f4f4f solid", borderRadius:1, borderWidth: 'thin'} : ''}
+                  onChange={(e) => setSearch(e.target.value)}
+                  >
+                  <SearchIcon position="end"/>
+                </TextField>
+              </div>
+              <br />
+              
+              {item.title.map((itemMap)=>{
+                return(
+                  <div className=''>
+                <Accordion
+                onChange={handleChange('panel1')}
+                sx={defineTabTheme}>
+                  <AccordionSummary
+                    className={classes.summary}
+                    sx={defineTabThemeSumary}
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <Typography 
+                    className={classes.typography}
+                    color={theme === "dark" ? "#FFF" : ""}
+                    >
+                      {itemMap}
+                    </Typography>
+                  </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography 
+                        className={classes.typography}
+                        color={theme === "dark" ? "#FFF" : ""}
+                        >
+                          {item.chapter.map((valueChap)=>{return(
+                            valueChap.chapter1.map((contChap)=>{return(
+                            <div className={classes.item}>
+                              <Link
+                                href={`#${contChap}`}
+                                className={classes.link}
+                                underline="none"
+                                color={theme === "dark" ? "#FFF" : ""}
+                                >
+                                <MenuItem 
+                                onClick={handleClose}
+                                sx={defineTabThemeMenu}>
+                                {contChap}
+                                </MenuItem>
+                              </Link>
+                            </div>
+                            )})
+                          )})}
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                </div>
+              )})}
+          </div> 
+        )})
+    );
+}
