@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { makeStyles } from "@material-ui/styles";
 import MenuItem from "@mui/material/MenuItem";
-import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 import Link from "@mui/material/Link";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import TextField from "@mui/material/TextField";
-import SearchIcon from "@mui/icons-material/Search";
-import { TwelveMpOutlined } from "@mui/icons-material";
+import SearchIcon from '@mui/icons-material/Search';
+import Button from '@mui/material/Button';
+import FolderOpenIcon from '@mui/icons-material/FolderOpen';
+
+import './menu.css'
 
 const useStyles = makeStyles({
   root: {
@@ -47,7 +47,6 @@ export default function MenuDoc(props) {
   const [expanded, setExpanded] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [search, setSearch] = useState('');
-  const [chapterDef, setChapterDef] = useState(['']);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -112,24 +111,21 @@ const array = [{
   panel:['panel1', 'panel2', 'panel3', 'panel4']
 }]
 
-  return (
+    return (
             array.map((item)=>{
               return(
+                  <div className={classes.root}>
+                  <div className='btnPesquisar'>
+                  <Button   
+                  onClick={(e) => setSearch(e.target.value)}  
+                  color="inherit" 
+                  sx={theme === "dark" ? {border:'1px #4f4f4f solid'}:{border:'1px #d0d0d0 solid'}}>
+                    <input type="text" placeholder="Pesquisar" className={theme === "dark" ? "dark" : "light"} />
+                      <SearchIcon color={theme === "dark" ? "#4f4f4f" : "#d0d0d0"}/>
+                    </Button>
+                  </div>
+                  <br />
 
-            <div className={classes.root}>
-              <div className="btnPesquisar">
-                <TextField
-                  size="small"
-                  placeholder="Pesquisar..."
-                  className="inputSearch"
-                  sx={theme === "dark" ? {border: "0.5px #4f4f4f solid", borderRadius:1, borderWidth: 'thin'} : ''}
-                  onChange={(e) => setSearch(e.target.value)}
-                  >
-                  <SearchIcon position="end"/>
-                </TextField>
-              </div>
-              <br />
-              
               {item.title.map((itemMap)=>{
                 return(
                   <div className=''>
@@ -139,7 +135,6 @@ const array = [{
                   <AccordionSummary
                     className={classes.summary}
                     sx={defineTabThemeSumary}
-                    expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
@@ -147,7 +142,7 @@ const array = [{
                     className={classes.typography}
                     color={theme === "dark" ? "#FFF" : ""}
                     >
-                      {itemMap}
+                      <FolderOpenIcon color={theme === "dark" ? "#4f4f4f" : "#d0d0d0"}/> {itemMap}
                     </Typography>
                   </AccordionSummary>
                     <AccordionDetails>

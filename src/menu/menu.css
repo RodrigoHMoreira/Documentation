@@ -1,0 +1,35 @@
+
+.light::placeholder {
+    color: #4F4F4F;
+    font-size: 12pt;
+  }
+
+.light{
+      border: none;
+      float:right; 
+      border-radius:3px;
+      width: 100%;
+      height: 35px;
+      background: transparent;
+      color: #4F4F4F;
+      font-size: 12pt;
+  }
+
+  .dark::placeholder {
+    color: #fafafa;
+    font-size: 12pt;
+  }
+
+.dark{
+    border: none;
+      float:right; 
+      border-radius:3px;
+      width: 100%;
+      height: 35px;
+      background: transparent;
+      color: #fafafa;
+      font-size: 12pt;
+  }
+
+
+  /* */

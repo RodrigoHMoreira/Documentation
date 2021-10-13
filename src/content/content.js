@@ -4,7 +4,7 @@ export default function ContentDoc() {
     const array = ['one', 'two', 'three', 'forur', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve']
 
     return(
-        array.map((item, index)=>{
+        array.map((item)=>{
             return(
         <div className='roots'>
             <div id={item}>
