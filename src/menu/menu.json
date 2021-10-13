@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Capítulo 1",
+      "submenus": [
+        {
+          "title": "One",
+          "link": "#One"
+        },
+        {
+          "title": "Two",
+          "link": "#Two"
+        },
+        {
+          "title": "Three",
+          "link": "#Three"
+        }
+      ],
+          "color":"red"
+    },
+    {
+      "title": "Capítulo 2",
+      "submenus": [
+        {
+          "title": "Four",
+          "link": "#Four"
+        },
+        {
+          "title": "Five",
+          "link": "#Five"
+        },
+        {
+          "title": "Six",
+          "link": "#Six"
+        }
+      ],
+         "color":"blue"
+    },
+    {
+      "title": "Capítulo 3",
+      "submenus": [
+        {
+          "title": "Seven",
+          "link": "#Seven"
+        },
+        {
+          "title": "Eight",
+          "link": "#Eight"
+        },
+        {
+          "title": "Nine",
+          "link": "#Nine"
+        }
+      ],
+          "color":"green"
+    },
+    {
+      "title": "Capítulo 4",
+      "submenus": [
+        {
+          "title": "Ten",
+          "link": "#Ten"
+        },
+        {
+          "title": "Eleven",
+          "link": "#Eleven"
+        },
+        {
+          "title": "Twelve",
+          "link": "#Twelve"
+        }
+      ],
+          "color":"orange"
+    }
+  ]

@@ -65,13 +65,13 @@ export default function HeaderDoc({ theme, toggleTheme, setTheme }) {
           </Stack>
         </FormGroup>
       </>
-      <Link href="">
+      <a href="https://mybots.app/" target="_blank">
         <img
           className="logo"
           src={theme === "light" ? logoLight : logoDark}
           style={{ width: 220, height: 70 }}
         />
-      </Link>
+      </a>
         <hr width = '100% '/>
     </div>
   );
