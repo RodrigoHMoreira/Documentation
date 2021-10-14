@@ -23,7 +23,7 @@ export default function Index() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <div className="index">
-        <div id="Header">
+        <div id={theme === "light" ? "HeaderLight" : "HeaderDark"}>
           <HeaderDoc
             theme={theme}
             setTheme={setTheme}
@@ -31,14 +31,9 @@ export default function Index() {
           />
         </div>
 
-        <div id="Menu">
-          <MenuDoc theme={theme}
-          />
-        </div>
+        <MenuDoc theme={theme} />
 
-        <div id="Content">
-          <ContentDoc />
-        </div>
+        <ContentDoc theme={theme} />
       </div>
     </ThemeProvider>
   );

@@ -1,0 +1,10 @@
+.docContent {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100px;
+    left: calc(16% + 10px);
+    text-align: justify;
+    font-size: 18;
+    height: calc(100% - 100px);
+}

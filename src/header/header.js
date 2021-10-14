@@ -1,3 +1,4 @@
+import './header.css'
 import React, { useEffect, Fragment, useState } from "react";
 
 import GlobalTheme from "../theme/global";
@@ -11,17 +12,11 @@ import Brightness5Icon from "@mui/icons-material/Brightness5";
 import Brightness2Icon from "@mui/icons-material/Brightness2";
 
 import { makeStyles } from "@material-ui/styles";
-import Divider from "@mui/material/Divider";
-import Link from "@mui/material/Link";
 
 import logoLight from "../images/logoMybots_Light.png";
 import logoDark from "../images/logoMybots_Dark.png";
 
 const useStyles = makeStyles({
-  roots: {
-    height: 80,
-    margin: 30,
-  },
 
   btnTheme: {
     float: "right",
@@ -46,8 +41,16 @@ export default function HeaderDoc({ theme, toggleTheme, setTheme }) {
      false
 
   return (
-    <div className={classes.roots}>
-      <>
+    <header>
+      <a href="https://mybots.app/" target="_blank">
+        <img
+          className="logo"
+          src={theme === "light" ? logoLight : logoDark}
+          style={{ width: 220, height: 70 }}
+        />
+      </a>
+
+      <div className="controls">
         <GlobalTheme />
         <FormGroup className={classes.btnTheme}>
           <Stack direction="row" spacing={1} alignItems="center">
@@ -64,16 +67,8 @@ export default function HeaderDoc({ theme, toggleTheme, setTheme }) {
             </Typography>
           </Stack>
         </FormGroup>
-      </>
-      <a href="https://mybots.app/" target="_blank">
-        <img
-          className="logo"
-          src={theme === "light" ? logoLight : logoDark}
-          style={{ width: 220, height: 70 }}
-        />
-      </a>
-        <hr width = '100% '/>
-    </div>
+      </div>
+    </header>
   );
 }
   
