@@ -41,7 +41,7 @@ export default function HeaderDoc({ theme, toggleTheme, setTheme }) {
      false
 
   return (
-    <header>
+    <header className={theme === "dark" ? "headerDark" : "headerLight"}>
       <a href="https://mybots.app/" target="_blank">
         <img
           className="logo"

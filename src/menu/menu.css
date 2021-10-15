@@ -6,7 +6,7 @@ scroll-behavior: smooth;
   width: 16%;
   height: calc(100% - 100px);
   position: fixed;
-  top: 100px;
+  top: 115px;
   left: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -87,4 +87,3 @@ scroll-behavior: smooth;
   border-radius: 3px;
 }
 
-  /* */

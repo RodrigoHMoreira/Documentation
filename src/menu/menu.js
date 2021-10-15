@@ -15,15 +15,6 @@ import menuList from "./menu.json";
 import "./menu.css";
 
 const useStyles = makeStyles({
-  // root: {
-  //   height: "100%",
-  //   width: "85%",
-  //   position: "absolute",
-  //   top: 25,
-  //   left: 25,
-  //   right: 0,
-  // },
-
   typography: {
     color: "#4f4f4f",
   },
@@ -68,7 +59,7 @@ export default function MenuDoc(props) {
       : {
         border: "1px #d0d0d0 solid",
         borderRadius: 1,
-        ":hover": { background: "#bdbdbd" },
+        ":hover": { background: "#e0e0e0" },
       };
 
   const defineTabThemeSumary =
@@ -77,7 +68,7 @@ export default function MenuDoc(props) {
         ":hover": { background: "#212121" },
       }
       : {
-        ":hover": { background: "#bdbdbd" }
+        ":hover": { background: "#e0e0e0" }
       }
 
   return (
@@ -135,7 +126,7 @@ export default function MenuDoc(props) {
                         to={submenu.link}
                         spy={true}
                         smooth={true}
-                        offset={-130}
+                        offset={-100}
                         duration={1000}
                         color={theme === "dark" ? "#FFF" : ""}
                       >

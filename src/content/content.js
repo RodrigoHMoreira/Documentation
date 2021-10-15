@@ -44,7 +44,3 @@ export default function ContentDoc(props) {
         </div>
     )
 }
-
-
-
-

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./index.css";
 import HeaderDoc from "../header/header";
 import MenuDoc from "../menu/menu";
 import ContentDoc from "../content/content";
@@ -23,17 +22,16 @@ export default function Index() {
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <div className="index">
-        <div id={theme === "light" ? "HeaderLight" : "HeaderDark"}>
-          <HeaderDoc
-            theme={theme}
+
+          <HeaderDoc theme={theme}
             setTheme={setTheme}
             toggleTheme={toggleTheme}
           />
-        </div>
 
         <MenuDoc theme={theme} />
 
         <ContentDoc theme={theme} />
+        
       </div>
     </ThemeProvider>
   );
