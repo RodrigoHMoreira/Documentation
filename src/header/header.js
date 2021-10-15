@@ -71,4 +71,3 @@ export default function HeaderDoc({ theme, toggleTheme, setTheme }) {
     </header>
   );
 }
-  

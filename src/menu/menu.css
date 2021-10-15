@@ -6,7 +6,7 @@ scroll-behavior: smooth;
   width: 16%;
   height: calc(100% - 100px);
   position: fixed;
-  top: 115px;
+  top: 100px;
   left: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -23,7 +23,7 @@ scroll-behavior: smooth;
 }
 
 .searchContentLight{
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   width: 85%;
@@ -33,7 +33,7 @@ scroll-behavior: smooth;
 }
 
 .searchContentDark{
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   width: 85%;
@@ -52,7 +52,6 @@ scroll-behavior: smooth;
   width: 95%;
   outline: none;
   border: none;
-  float:right; 
   border-radius:3px;
   background: transparent;
   color: #4F4F4F;
@@ -69,7 +68,6 @@ scroll-behavior: smooth;
   width: 95%;
   outline: none;
   border: none;
-  float:right; 
   border-radius:3px;
   background: transparent;
   color: #fafafa;
