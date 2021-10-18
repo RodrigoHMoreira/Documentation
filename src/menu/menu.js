@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles, withStyles} from "@material-ui/styles";
 import MenuItem from "@mui/material/MenuItem";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -10,15 +10,41 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import SearchIcon from "@mui/icons-material/Search";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
+import Paper from '@mui/material/Paper'
 
 import menuList from "./menu.json";
 import "./menu.css";
 
-const useStyles = makeStyles({
-  typography: {
-    color: "#4f4f4f",
+const CssTextField = withStyles({
+  root: {
+    '& .MuiInput-underline:after': {
+      borderBottomColor: 'transparent',
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'transparent',
+      },
+      '&:hover fieldset': {
+        borderColor: 'transparent',
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: 'transparent',
+      },
+    },
   },
+})(TextField);
 
+
+const useStyles = makeStyles({
+  margin:{
+    width:'100%'
+  },   
+  noOptions: {
+    color:'yellow',
+    fontSize:'24pt'
+  }
 });
 
 export default function MenuDoc(props) {
@@ -28,11 +54,6 @@ export default function MenuDoc(props) {
 
   const [expanded, setExpanded] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
-  const [search, setSearch] = useState("");
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
 
   const handleClose = () => {
     setAnchorEl(null);
@@ -42,7 +63,6 @@ export default function MenuDoc(props) {
     theme === "dark"
       ? {
         backgroundColor: "#111",
-        color: "#111",
         border: "1px #4f4f4f solid",
       }
       : {
@@ -71,27 +91,35 @@ export default function MenuDoc(props) {
         ":hover": { background: "#e0e0e0" }
       }
 
+  const defineTabThemePlaceholder =
+  theme === "dark"
+      ? {
+        '& ::placeholder': { color: "#fff"},
+      }
+      : ''
+
   return (
     <div className="sideBar">
-      <div
-        className="searchContent"
-        onClick={(e) => setSearch(e.target.value)}
-        color="inherit"
-        sx={
-          theme === "dark"
-            ? { border: "1px #4f4f4f solid" }
-            : { border: "1px #d0d0d0 solid" }
-        }
-      >
-        <div className={theme === "dark" ? "searchContentDark" : "searchContentLight"}>
-          <input
-            type="text"
-            placeholder="Pesquisar"
-            className={theme === "dark" ? "dark" : "light"}
-            style={{ padding: 10 }}
-          />
-          <SearchIcon color={theme === "dark" ? "#4f4f4f" : "#d0d0d0"} />
-        </div>
+      <div className="searchContent">
+        <Autocomplete
+        
+          PaperComponent={({ children }) => (
+            <Paper style={theme === 'dark' ? {backgroundColor: "#111", color:"#fff"} : {backgroundColor: "#fff", color:"#4f4f4f"}}>
+              {children}
+            </Paper>
+            )}
+          className={classes.margin}
+          options={menuList}
+          getOptionLabel={(option) => option.title}
+          renderInput={(params) =>
+            <div className={theme === "dark" ? "searchContentDark" : "searchContentLight"}>
+                <CssTextField className={classes.margin} {...params} placeholder='pesquisar' sx={defineTabThemePlaceholder}/>
+              <SearchIcon />
+            </div>
+              }
+          classes={{noOptions: classes.noOptions}}
+          noOptionsText={'teste'}
+            />
       </div>
       <br />
 

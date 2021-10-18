@@ -17,6 +17,7 @@ scroll-behavior: smooth;
 }
 
 .searchContent {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +25,7 @@ scroll-behavior: smooth;
 
 .searchContentLight{
   margin-top: 20px;
+  margin-left: 15px;
   display: flex;
   align-items: center;
   width: 85%;
@@ -34,44 +36,13 @@ scroll-behavior: smooth;
 
 .searchContentDark{
   margin-top: 20px;
+  margin-left: 15px;
   display: flex;
   align-items: center;
   width: 85%;
   height: 40px;
   border: 1px #4f4f4f  solid;
   border-radius:3px;
-}
-
-.light::placeholder {
-  color: #4F4F4F;
-  font-size: 12pt;
-}
-
-.light{
-  height: 35px;
-  width: 95%;
-  outline: none;
-  border: none;
-  border-radius:3px;
-  background: transparent;
-  color: #4F4F4F;
-  font-size: 12pt;
-}
-
-.dark::placeholder {
-  color: #fafafa;
-  font-size: 12pt;
-}
-
-.dark{
-  height: 35px;
-  width: 95%;
-  outline: none;
-  border: none;
-  border-radius:3px;
-  background: transparent;
-  color: #fafafa;
-  font-size: 12pt;
 }
 
 .link{

@@ -3,18 +3,11 @@ import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import IconButton from '@mui/material/IconButton';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import { makeStyles } from "@material-ui/styles";
 
 import contentList from './content.json'
 
-const useStyles = makeStyles({
-
-})
-
 export default function ContentDoc(props) {
     const { theme } = props;
-
-    const classes = useStyles();
 
     return (
         <div id="docContent" className="docContent">
