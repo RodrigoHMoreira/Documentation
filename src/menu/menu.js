@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+// https://codesandbox.io/s/63949999how-to-apply-style-on-nooptionstext-in-autocomplete-material-ui6395074263950742-8lj1k?file=/demo.tsx:431-477
+
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import { makeStyles, withStyles} from "@material-ui/styles";
@@ -42,9 +44,7 @@ const useStyles = makeStyles({
     width:'100%'
   },   
   noOptions: {
-    color:'yellow',
-    fontSize:'24pt'
-  }
+    color:'yellow'  }
 });
 
 export default function MenuDoc(props) {
@@ -102,9 +102,9 @@ export default function MenuDoc(props) {
     <div className="sideBar">
       <div className="searchContent">
         <Autocomplete
-        
+         classes={{noOptions: classes.noOptions}}
           PaperComponent={({ children }) => (
-            <Paper style={theme === 'dark' ? {backgroundColor: "#111", color:"#fff"} : {backgroundColor: "#fff", color:"#4f4f4f"}}>
+            <Paper style={theme === 'dark' ? {backgroundColor: "red", color:"#fff"} : {backgroundColor: "#fff", color:"#4f4f4f"}}>
               {children}
             </Paper>
             )}
@@ -117,8 +117,6 @@ export default function MenuDoc(props) {
               <SearchIcon />
             </div>
               }
-          classes={{noOptions: classes.noOptions}}
-          noOptionsText={'teste'}
             />
       </div>
       <br />
