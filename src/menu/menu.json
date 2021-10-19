@@ -3,15 +3,15 @@
       "title": "Capítulo 1",
       "submenus": [
         {
-          "title": "One",
+          "title": "Seção 1",
           "link": "#One"
         },
         {
-          "title": "Two",
+          "title": "Seção 2",
           "link": "#Two"
         },
         {
-          "title": "Three",
+          "title": "Seção 3",
           "link": "#Three"
         }
       ],
@@ -21,15 +21,15 @@
       "title": "Capítulo 2",
       "submenus": [
         {
-          "title": "Four",
+          "title": "Seção 4",
           "link": "#Four"
         },
         {
-          "title": "Five",
+          "title": "Seção 5",
           "link": "#Five"
         },
         {
-          "title": "Six",
+          "title": "Seção 6",
           "link": "#Six"
         }
       ],
@@ -39,15 +39,15 @@
       "title": "Capítulo 3",
       "submenus": [
         {
-          "title": "Seven",
+          "title": "Seção 7",
           "link": "#Seven"
         },
         {
-          "title": "Eight",
+          "title": "Seção 8",
           "link": "#Eight"
         },
         {
-          "title": "Nine",
+          "title": "Seção 9",
           "link": "#Nine"
         }
       ],
@@ -57,15 +57,15 @@
       "title": "Capítulo 4",
       "submenus": [
         {
-          "title": "Ten",
+          "title": "Seção 10",
           "link": "#Ten"
         },
         {
-          "title": "Eleven",
+          "title": "Seção 11",
           "link": "#Eleven"
         },
         {
-          "title": "Twelve",
+          "title": "Seção 12",
           "link": "#Twelve"
         }
       ],

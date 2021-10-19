@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-// https://codesandbox.io/s/63949999how-to-apply-style-on-nooptionstext-in-autocomplete-material-ui6395074263950742-8lj1k?file=/demo.tsx:431-477
-
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import { makeStyles, withStyles} from "@material-ui/styles";
@@ -38,7 +36,6 @@ const CssTextField = withStyles({
   },
 })(TextField);
 
-
 const useStyles = makeStyles({
   margin:{
     width:'100%'
@@ -54,6 +51,7 @@ export default function MenuDoc(props) {
 
   const [expanded, setExpanded] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
+  const [search, setSearch] = useState({"teste":"teste"});
 
   const handleClose = () => {
     setAnchorEl(null);
@@ -61,67 +59,58 @@ export default function MenuDoc(props) {
 
   const defineTabTheme =
     theme === "dark"
-      ? {
-        backgroundColor: "#111",
-        border: "1px #4f4f4f solid",
-      }
-      : {
-        border: "1px #d0d0d0 solid",
-      };
+      ? { backgroundColor: "#111", border: "1px #4f4f4f solid" }
+      : { border: "1px #d0d0d0 solid" };
 
   const defineTabThemeMenu =
     theme === "dark"
-      ? {
-        border: "1px #4f4f4f solid",
-        borderRadius: 1,
-        ":hover": { background: "#212121" },
-      }
-      : {
-        border: "1px #d0d0d0 solid",
-        borderRadius: 1,
-        ":hover": { background: "#e0e0e0" },
-      };
+      ? { border: "1px #4f4f4f solid", borderRadius: 1, ":hover": { background: "#212121" }}
+      : {border: "1px #d0d0d0 solid", borderRadius: 1,":hover": { background: "#e0e0e0" }}
 
   const defineTabThemeSumary =
     theme === "dark"
-      ? {
-        ":hover": { background: "#212121" },
-      }
-      : {
-        ":hover": { background: "#e0e0e0" }
-      }
+      ? { ":hover": { background: "#212121" }}
+      : { ":hover": { background: "#e0e0e0" }}
 
   const defineTabThemePlaceholder =
   theme === "dark"
-      ? {
-        '& ::placeholder': { color: "#fff"},
-      }
+      ? { color: "#fff", '& ::placeholder': { color: "#fff"}}
       : ''
-
+  
   return (
     <div className="sideBar">
       <div className="searchContent">
         <Autocomplete
-         classes={{noOptions: classes.noOptions}}
+         classes={{noOption: classes.noOptions}}
           PaperComponent={({ children }) => (
-            <Paper style={theme === 'dark' ? {backgroundColor: "red", color:"#fff"} : {backgroundColor: "#fff", color:"#4f4f4f"}}>
+            <Paper style={theme === 'dark' ? {backgroundColor: "#111", color:"#fff"} : {backgroundColor: "#fff", color:"#4f4f4f"}}>
               {children}
             </Paper>
             )}
           className={classes.margin}
           options={menuList}
-          getOptionLabel={(option) => option.title}
+          getOptionLabel={(option) => option.submenus}
           renderInput={(params) =>
             <div className={theme === "dark" ? "searchContentDark" : "searchContentLight"}>
-                <CssTextField className={classes.margin} {...params} placeholder='pesquisar' sx={defineTabThemePlaceholder}/>
+                <CssTextField 
+                {...params}
+                className={classes.margin} 
+                placeholder='pesquisar' 
+                sx={defineTabThemePlaceholder}
+                />
               <SearchIcon />
             </div>
               }
+              onChange={(e, newValue)=>{
+                setSearch(newValue)
+              }}
+              onKeyDown={(e) =>{if(e.key === 'Enter'){window.location.href='http://www.example.com'}
+              }}
+              value={search}
             />
       </div>
       <br />
-
-      {menuList.map((menu) => {
+      {menuList.map((menu) => { 
         return (
           <Accordion id="topicos" sx={defineTabTheme}>
             <AccordionSummary
