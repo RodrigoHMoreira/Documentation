@@ -1,5 +1,5 @@
 .content{
-width: 98%;
+width: 99.2%;
 }
 
 .content h1{
@@ -18,3 +18,10 @@ width: 98%;
     height: calc(100% - 100px);
     z-index: 7;
 }
+
+.inputSearch{
+    margin: 20px;
+    width: 15%;
+    position: fixed;
+    right: 0;
+  }
