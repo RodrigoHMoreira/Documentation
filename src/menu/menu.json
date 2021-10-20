@@ -1,6 +1,7 @@
 [
     {
       "title": "Capítulo 1",
+      "link": "#chapterOne",
       "submenus": [
         {
           "title": "Seção 1",
@@ -19,6 +20,7 @@
     },
     {
       "title": "Capítulo 2",
+      "link": "#chapterTwo",
       "submenus": [
         {
           "title": "Seção 4",
@@ -37,6 +39,7 @@
     },
     {
       "title": "Capítulo 3",
+      "link": "#chapterThree",
       "submenus": [
         {
           "title": "Seção 7",
@@ -55,6 +58,7 @@
     },
     {
       "title": "Capítulo 4",
+      "link": "#chapterFour",
       "submenus": [
         {
           "title": "Seção 10",

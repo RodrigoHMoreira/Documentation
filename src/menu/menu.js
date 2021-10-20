@@ -89,9 +89,10 @@ export default function MenuDoc(props) {
             )}
           className={classes.margin}
           options={menuList}
-          getOptionLabel={(option) => option.submenus}
+          getOptionLabel={(options) => options.title}
           renderInput={(params) =>
             <div className={theme === "dark" ? "searchContentDark" : "searchContentLight"}>
+              {console.log(params)}
                 <CssTextField 
                 {...params}
                 className={classes.margin} 
@@ -101,12 +102,7 @@ export default function MenuDoc(props) {
               <SearchIcon />
             </div>
               }
-              onChange={(e, newValue)=>{
-                setSearch(newValue)
-              }}
-              onKeyDown={(e) =>{if(e.key === 'Enter'){window.location.href='http://www.example.com'}
-              }}
-              value={search}
+              onChange={(event)=>console.log(event.target.value)}
             />
       </div>
       <br />
