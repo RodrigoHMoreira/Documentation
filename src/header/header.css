@@ -17,7 +17,15 @@ header a {
 header .controls {
     position: absolute;
     right: 10px;
+    color: #424242;
 }
+
+.inputSearch{
+    margin: 20px;
+    width: 15%;
+    position: fixed;
+    right: 0;
+  }
 
 
   

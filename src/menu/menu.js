@@ -1,19 +1,37 @@
 import React, { useState } from "react";
-
-import { Link, animateScroll as scroll } from "react-scroll";
-
+import menuList from "../index/indexList.json";
+import "./menu.css";
 import MenuItem from "@mui/material/MenuItem";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
+import DescriptionIcon from '@mui/icons-material/Description';
+import { makeStyles } from '@material-ui/styles';
 
-import menuList from "../index/indexList.json";
-import "./menu.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 
+const useStyles = makeStyles({
+  root: {
+      border:"0.1px solid #e0e0e0"
+  },
+
+  summary:{
+    '&:hover': { background: '#e0e0e0'},
+  },
+
+  details:{
+      padding:0,
+  },
+
+  item:{
+    ":hover": { background: "#e0e0e0" },
+  },
+})
 
 export default function MenuDoc() {
+  const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -25,44 +43,50 @@ export default function MenuDoc() {
       <div className="sideBar"> 
       {menuList.map((menu) => { 
         return (
-          <Accordion id="topicos" 
-            sx={{border: "1px #d0d0d0 solid"}}>
-            <AccordionSummary
-              sx={ {":hover": { background: "#e0e0e0" }}}
-              aria-controls="panel1a-content"
-              id="panel1a-header"
-              >
-              <Typography >
-                <FolderOpenIcon
-                  sx={{ color: menu.color }}
-                />&nbsp;&nbsp;
-                {menu.title}
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography >
-                {menu.submenus.map((submenu) => {
-                  return (
-                    <div className='item'>
-                      <Link
-                        activeClass='link'
-                        to={submenu.link}
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        duration={1000}
-                        >
-                        <MenuItem
-                          onClick={handleClose}
-                          sx={{border: "1px #d0d0d0 solid", borderRadius: 1,":hover": { background: "#e0e0e0" }}}
+          <Accordion 
+          id="topicos" 
+          className={classes.root}>
+            <Link
+              activeClass='link'
+              to={menu.link}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1000}>
+              <AccordionSummary
+                className={classes.summary}
+                aria-controls="panel1a-content"
+                id="panel1a-header">
+                  <Typography>
+                      <FolderOpenIcon sx={{mr:1}}/>
+                      {menu.title}
+                  </Typography>
+                </AccordionSummary>
+              </Link>
+              <AccordionDetails className={classes.details}>
+                <Typography>
+                  {menu.submenus.map((submenu) => {
+                    return (
+                      <div className='item'>
+                        <Link
+                          activeClass='link'
+                          to={submenu.link}
+                          spy={true}
+                          smooth={true}
+                          offset={-100}
+                          duration={1000}
                           >
-                          {submenu.title}
-                        </MenuItem>
-                      </Link>
-                    </div>
-                  );
-                })}
-              </Typography>
+                          <MenuItem
+                            className={classes.item} 
+                            onClick={handleClose}>
+                              <DescriptionIcon sx={{mr:1}}/>
+                              {submenu.title}
+                          </MenuItem>
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </Typography>
             </AccordionDetails>
           </Accordion>
         );

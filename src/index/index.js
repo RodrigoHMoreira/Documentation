@@ -6,13 +6,9 @@ export default function Index() {
 
   return (
       <div className="index">
-
           <HeaderDoc />
-
           <MenuDoc />
-
           <ContentDoc />
-        
       </div>
   );
 }
