@@ -11,10 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default function HeaderDoc() {
 
-const [searchResult, setSearchResult] =  useState(0);
-
-const list = contentList.map((option) => {return(option.submenus)})
-const subList = list.map((value) => {return(value)})
+const [searchResult, setSearchResult] =  useState('');
 
   return (
     <header className="headerLight">
@@ -27,27 +24,29 @@ const subList = list.map((value) => {return(value)})
       </a>
       <div className="inputSearch">
         <Stack spacing={2}>
-          {console.log(subList)}
           <Autocomplete
-            disablePortal
             id="free-solo-2-demo"
-            options={''}
+            options={contentList.map(value=>value.submenus[0])}
+            autoHighlight
+            getOptionLabel={(options) => options.text}
             renderInput={(params) => (
               <TextField
                 {...params}
                 onChange={(e)=>setSearchResult(e.target.value)}
+                onKeyDown={(e)=>e.key === 'Enter' ? console.log('salvo') : console.log('nãoSalvo')}
                 placeholder="Search input"
                 InputProps={{
                   ...params.InputProps,
-                  type: 'search',
-                  endAdornment: (
-                  <InputAdornment sx={{mr:-3}} >
+                  autoComplete: 'new-password',
+                  startAdornment: (
+                  <InputAdornment >
                     <SearchIcon/>
                   </InputAdornment>
                     ),
                   }}
                 />    
               )}
+              value={searchResult}
               noOptionsText={`Sem resultados para "${searchResult}"`}
             />
           </Stack>
