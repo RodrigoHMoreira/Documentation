@@ -1,4 +1,4 @@
-//subiu 25/10
+//subiu 26/10
 import React from "react";
 import './content.css';
 import contentList from '../index/indexList.json';
@@ -14,9 +14,10 @@ const useStyles = makeStyles({
         right: 10,
         bottom: 10,
         borderRadius: '100%',
+        color: "#fff",
+        background: '#616161',
         '&:hover': {
             background: '#ff0000',
-            color: "#fff"
         }
     }
 })
@@ -45,7 +46,7 @@ export default function ContentDoc() {
                 )
             })}
             <div >
-                <Link className={classes.root}
+                <Link 
                     activeClass='link'
                     to='content'
                     spy={true}
@@ -53,8 +54,9 @@ export default function ContentDoc() {
                     offset={-120}
                     duration={2000}
                 >
-                    <IconButton>
-                        <ArrowUpwardIcon />
+                    <IconButton className={classes.root}>
+                        <ArrowUpwardIcon
+                        className={classes.root}/>
                     </IconButton>
                 </Link>
             </div>

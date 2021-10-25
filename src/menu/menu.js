@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import menuList from "../index/indexList.json";
 import "./menu.css";
 import MenuItem from "@mui/material/MenuItem";
 import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import FolderOpenIcon from "@mui/icons-material/FolderOpen";
@@ -24,26 +23,52 @@ const useStyles = makeStyles({
     '&:hover': { background: '#e0e0e0' },
   },
 
-  details: {
-    padding: 0,
-  },
-
   item: {
-    ":hover": { background: "#e0e0e0" },
+    "&:hover": { background: "#e0e0e0" },
   },
 })
 
 export default function MenuDoc() {
   const classes = useStyles();
 
+  const arrayError = 
+  [
+    {
+    "title": 'Sem opções',
+    "link": '',
+    "submenus": ['']
+    }
+]
+
   const [anchorEl, setAnchorEl] = useState(null);
   const [searchResult, setSearchResult] = useState('');
+  const [contentValue, setContentValue] = useState(menuList);
+  const [contentValue2, setContentValue2] = useState(menuList);
 
   const handleClose = () => {
     setAnchorEl(null);
   };
 
-  const searchList = menuList.filter(item => item.title.startsWith(searchResult))
+  const searchList = () => {
+     if(searchResult != ""){
+       const newList = contentValue2.filter(value => value.title.includes(searchResult))
+       setContentValue(newList)
+     }else{
+       setContentValue(contentValue2)
+     }
+     console.log(contentValue.length)
+  }
+
+  const listSearch = () => {
+      if(contentValue.length === 0){
+        setContentValue(arrayError)
+      }
+  }
+
+  useEffect(()=>{
+    searchList()
+    listSearch()
+  }, [searchResult])
 
   return (
     <div className="sideBar">
@@ -62,15 +87,14 @@ export default function MenuDoc() {
               // onKeyDown={(e) => e.key === 'Enter' ? console.log('salvo') : console.log('nãoSalvo')}
             />
       </div><br />
-
-      {searchList.map((menu) => {
+      {contentValue.map((item) => {
         return (
           <Accordion
             id="topicos"
             className={classes.root}>
             <Link
               activeClass='link'
-              to={menu.link}
+              to={item.link}
               spy={true}
               smooth={true}
               offset={-100}
@@ -81,16 +105,14 @@ export default function MenuDoc() {
                 id="panel1a-header">
                 <Typography>
                   <FolderOpenIcon sx={{ mr: 1 }} />
-                  {menu.title}
+                  {item.title}
                 </Typography>
               </AccordionSummary>
             </Link>
-            <AccordionDetails className={classes.details}>
-              <Typography>
-                {menu.submenus.map((submenu) => {
+                {item.submenus.map((submenu) => {
                   return (
-                    <div className='item'>
-                      <Link
+                    <div className={classes.item} >
+                      <Link 
                         activeClass='link'
                         to={submenu.link}
                         spy={true}
@@ -99,17 +121,14 @@ export default function MenuDoc() {
                         duration={1000}
                       >
                         <MenuItem
-                          className={classes.item}
                           onClick={handleClose}>
-                          <DescriptionIcon sx={{ mr: 1 }} />
+                          <DescriptionIcon sx={{ ml: 2, mr:1}} />
                           {submenu.title}
                         </MenuItem>
                       </Link>
                     </div>
                   );
                 })}
-              </Typography>
-            </AccordionDetails>
           </Accordion>
         );
       })}
