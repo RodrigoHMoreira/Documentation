@@ -16,11 +16,8 @@ scroll-behavior: smooth;
   align-items: center;
 }
 
-.searchContent {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.inputSearch {
+  width: 85%;
 }
 
 .link{
@@ -34,4 +31,6 @@ scroll-behavior: smooth;
   border-radius: 3px;
   color: #424242;
 }
+
+
 

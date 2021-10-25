@@ -8,16 +8,16 @@
     font-size: 18;
     height: calc(100% - 100px);
     z-index: 7;
-    color: #424242;
+    
 }
 
 .content{
 width: 99.2%;
+color: #424242;
 }
 
 .content h1{
     padding: 20px 0;
 }
-
 
 
