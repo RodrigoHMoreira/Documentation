@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import menuList from "../index/indexList.json";
 import "./menu.css";
 import MenuItem from "@mui/material/MenuItem";
@@ -10,7 +10,6 @@ import FolderOpenIcon from "@mui/icons-material/FolderOpen";
 import DescriptionIcon from '@mui/icons-material/Description';
 import { makeStyles } from '@material-ui/styles';
 import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -39,37 +38,19 @@ export default function MenuDoc() {
 
   const [anchorEl, setAnchorEl] = useState(null);
   const [searchResult, setSearchResult] = useState('');
-  const [listMap, setListMap] = useState([]);
 
   const handleClose = () => {
     setAnchorEl(null);
   };
 
   const searchList = menuList.filter(item => item.title.startsWith(searchResult))
-  const searchList2 = menuList
-
-  const handleText = () => {
-    searchResult == '' ? setListMap(searchList2) : setListMap(searchList)
-  }
-
-  useEffect(() => {
-    handleText()
-  })
 
   return (
     <div className="sideBar">
       <div className="inputSearch">
-        <Autocomplete
-          options={searchList}
-          getOptionLabel={(option) => option.title}
-          autoHighlight
-          renderInput={(params) => (
             <TextField
-              {...params}
               placeholder="Pesquisar"
               InputProps={{
-                ...params.InputProps,
-                autoComplete: 'new-password',
                 startAdornment: (
                   <InputAdornment >
                     <SearchIcon />
@@ -78,13 +59,11 @@ export default function MenuDoc() {
               }}
               value={searchResult}
               onChange={(e) => setSearchResult(e.target.value)}
-              onKeyDown={(e) => e.key === 'Enter' ? console.log('salvo') : console.log('nãoSalvo')}
+              // onKeyDown={(e) => e.key === 'Enter' ? console.log('salvo') : console.log('nãoSalvo')}
             />
-          )}
-          noOptionsText={`Sem resultados para "${searchResult}"`}
-        />
       </div><br />
-      {listMap.map((menu) => {
+
+      {searchList.map((menu) => {
         return (
           <Accordion
             id="topicos"

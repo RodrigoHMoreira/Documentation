@@ -1,4 +1,4 @@
-//subiu 24/10
+//subiu 25/10
 import React from "react";
 import './content.css';
 import contentList from '../index/indexList.json';
