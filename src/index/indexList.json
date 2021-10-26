@@ -1,6 +1,6 @@
 [
     {
-      "title": "chapter 1 - disturbed",
+      "title": "chapter 1",
       "link": "#chapterOne",
       "submenus": [
         {
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "title": "chapter 2 - slipknot",
+      "title": "chapter 2",
       "link": "#chapterTwo",
       "submenus": [
         {
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "title": "chapter 3 - system of a down",
+      "title": "chapter 3",
       "link": "#chapterThree",
       "submenus": [
         {
@@ -63,7 +63,7 @@
       ]
       },
       {
-      "title": "chapter 4 - korn",
+      "title": "chapter 4",
       "link": "#chapterFour",
       "submenus": [
         {

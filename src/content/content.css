@@ -12,12 +12,33 @@
 }
 
 .content{
-width: 99.2%;
-color: #424242;
+    width: 99.2%;
+    color: #424242;
 }
 
 .content h1{
     padding: 20px 0;
 }
+
+.iconButtonTop{
+    padding: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: #616161;
+    color:#fff;
+}
+
+.iconButtonTop:hover{
+    background: #ff0000;
+    color:#fff;
+}
+.logo{
+    width: 280px;
+    height: 70px;
+}
+
+
 
 

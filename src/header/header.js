@@ -6,11 +6,10 @@ export default function HeaderDoc() {
 
   return (
     <header className="headerLight">
-      <a href="https://mybots.app/" target="_blank">
+      <a href="http://localhost:3000/" target="_blank">
         <img
           className="logo"
           src={logoLight}
-          style={{ width: 220, height: 70 }}
         />
       </a>
     </header>

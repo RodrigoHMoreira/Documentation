@@ -4,7 +4,7 @@ scroll-behavior: smooth;
 
 .sideBar {
   width: 16%;
-  height: calc(100% - 100px);
+  height: calc(100% - 150px);
   position: fixed;
   top: 130px;
   left: 0;
@@ -31,6 +31,33 @@ scroll-behavior: smooth;
   border-radius: 3px;
   color: #424242;
 }
+
+.sideBar .title{
+  border: 0.1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.sideBar .title :hover{
+  background: #e0e0e0;
+}
+
+.sideBar .item{
+  border: 0.1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.sideBar .item :hover{
+  background: #e0e0e0;
+}
+
+.sideBar .erro{
+width: 85%;
+padding: 10px;
+border: 0.1px solid #e0e0e0;
+word-break: break-all;
+border-radius: 5px;
+}
+
 
 
 
