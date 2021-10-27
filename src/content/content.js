@@ -18,6 +18,7 @@ export default function ContentDoc() {
 					smooth={true}
 					offset={-120}
 					duration={2000}
+					hashSpy
 				>
 					<ArrowUpwardIcon className="root"/>
 				</Link>

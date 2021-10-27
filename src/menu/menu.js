@@ -25,47 +25,47 @@ export default function MenuDoc() {
 	};
 
 	const searchList = () => {
-		 if(searchResult != ""){
-			 const newList = contentValue2.filter(value => value.title.includes(searchResult))
-			 setContentValue(newList)
-		 }else{
-			 setContentValue(contentValue2)
-		 }
+		if (searchResult != "") {
+			const newList = contentValue2.filter(value => value.title.includes(searchResult))
+			setContentValue(newList)
+		} else {
+			setContentValue(contentValue2)
+		}
 	}
 
-	useEffect(()=>{
+	useEffect(() => {
 		searchList()
 	}, [searchResult])
 
 	return (
-			<div className="sideBar">
-				<div className="inputSearch">
-							<TextField
-								placeholder="Pesquisar"
-								InputProps={{
-									startAdornment: (
-										<InputAdornment >
-											<SearchIcon />
-										</InputAdornment>
-									),
-								}}
-								value={searchResult}
-								onChange={(e) => setSearchResult(e.target.value)}
-								// onKeyDown={(e) => e.key === 'Enter' ? console.log('salvo') : console.log('nãoSalvo')}
-							/>
-				</div><br />
-				{(contentValue.length === 0)
-					? 
-					<div className="erro">
-						<div >
-								<p><strong>Não existe opção para "</strong>{searchResult}<strong>"</strong></p>
-						</div>
+		<div className="sideBar">
+			<div className="inputSearch">
+				<TextField
+					placeholder="Pesquisar"
+					InputProps={{
+						startAdornment: (
+							<InputAdornment >
+								<SearchIcon />
+							</InputAdornment>
+						),
+					}}
+					value={searchResult}
+					onChange={(e) => setSearchResult(e.target.value)}
+				// onKeyDown={(e) => e.key === 'Enter' ? console.log('salvo') : console.log('nãoSalvo')}
+				/>
+			</div><br />
+			{(contentValue.length === 0)
+				?
+				<div className="erro">
+					<div >
+						<p><strong>Não existe opção para "</strong>{searchResult}<strong>"</strong></p>
 					</div>
-					: 
-					contentValue.map((item) => {
-						return (
-							<Accordion id="topicos">
-								<div className="title">
+				</div>
+				:
+				contentValue.map((item) => {
+					return (
+						<Accordion id="topicos">
+							<div className="title">
 								<Link
 									activeClass='link'
 									to={item.link}
@@ -73,41 +73,43 @@ export default function MenuDoc() {
 									smooth={true}
 									offset={-100}
 									duration={1000}
-									>
-								<div className="sumary">
-									<AccordionSummary
-										expandIcon={<ExpandMoreIcon />}
-										aria-controls="panel1a-content"
-										id="panel1a-header"
+									hashSpy
+								>
+									<div className="sumary">
+										<AccordionSummary
+											expandIcon={<ExpandMoreIcon />}
+											aria-controls="panel1a-content"
+											id="panel1a-header"
 										>
 											<FolderOpenIcon sx={{ mr: 1 }} />
 											{item.title}
-									</AccordionSummary>
-								</div>
+										</AccordionSummary>
+									</div>
 								</Link>
-								</div>
-										{item.submenus.map((submenu) => {
-											return (
-												<div className="item">
-													<Link 
-														activeClass='link'
-														to={submenu.link}
-														spy={true}
-														smooth={true}
-														offset={-100}
-														duration={1000}
-													>
-														<MenuItem
-															onClick={handleClose}>
-															<DescriptionIcon sx={{ ml: 2, mr:1}} />
-															{submenu.title}
-														</MenuItem>
-													</Link>
-												</div>
-											);
-										})}
-							</Accordion>
-						);
+							</div>
+							{item.submenus.map((submenu) => {
+								return (
+									<div className="item">
+										<Link
+											activeClass='link'
+											to={submenu.link}
+											spy={true}
+											smooth={true}
+											offset={-100}
+											duration={1000}
+											hashSpy
+										>
+											<MenuItem
+												onClick={handleClose}>
+												<DescriptionIcon sx={{ ml: 2, mr: 1 }} />
+												{submenu.title}
+											</MenuItem>
+										</Link>
+									</div>
+								);
+							})}
+						</Accordion>
+					);
 				})}
 		</div>
 	);
