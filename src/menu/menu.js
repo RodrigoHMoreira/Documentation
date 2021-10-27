@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 import menuList from "../index/indexList.json";
 import "./menu.css";
 import MenuItem from "@mui/material/MenuItem";
@@ -11,7 +12,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+// import { BrowserRouter as Router, Switch, Route, useParams } from "react-router-dom";
 
 export default function MenuDoc() {
 
@@ -72,7 +74,7 @@ export default function MenuDoc() {
 									spy={true}
 									smooth={true}
 									offset={-100}
-									duration={1000}
+									duration={500}
 									hashSpy
 								>
 									<div className="sumary">
@@ -96,7 +98,7 @@ export default function MenuDoc() {
 											spy={true}
 											smooth={true}
 											offset={-100}
-											duration={1000}
+											duration={500}
 											hashSpy
 										>
 											<MenuItem
