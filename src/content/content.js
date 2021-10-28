@@ -35,14 +35,13 @@
 							<div id={item.link} className="content">
 								<h1>{item.title}</h1>
 									<br/>
-									{console.log(listVideo.length)}
+									{listVideo.map((itemVideo)=>{return(
 									<div className="videoContent">
 										<video className="video" controls>
-											{listVideo.map((item)=>{return(
-												<source src={item} type="video/mp4"/>
-											)})}										
+											<source src={itemVideo} type="video/mp4"/>
 										</video>
 									</div>
+										)})}
 								{item.submenus.map((value) => {
 										return (
 											<div id={value.link} className="content">

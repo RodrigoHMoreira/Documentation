@@ -2,7 +2,7 @@
     {
       "title": "chapter 1",
       "link": "/chapterOne",
-      "video": "../videos/video1.mp4",
+      "video": 1,
       "submenus": [
         {
           "title": "section 1",
@@ -27,7 +27,7 @@
     {
       "title": "chapter 2",
       "link": "/chapterTwo",
-      "video": "../videos/video1.mp4",
+      "video": 2,
       "submenus": [
         {
           "title": "section 4",
@@ -52,7 +52,7 @@
     {
       "title": "chapter 3",
       "link": "/chapterThree",
-      "video": "../videos/video1.mp4",
+      "video": 3,
       "submenus": [
         {
           "title": "section 7",
@@ -77,7 +77,7 @@
       {
       "title": "chapter 4",
       "link": "/chapterFour",
-      "video": "../videos/video1.mp4",
+      "video": 4,
       "submenus": [
         {
           "title": "section 10",
