@@ -1,15 +1,13 @@
-    import React from "react";
-    import { Route, BrowserRouter } from "react-router-dom";
-    import routesList from '../index/indexList.json';
+import React, { useEffect } from 'react'
 
-    const Routes = () => {
-        return(
-                routesList.map((item)=>{return(
-                    <BrowserRouter>
-                        <Route component={item.title}  path={item.link} />
-                    </BrowserRouter>
-                )})
-            )
-    }
+import Index from './index/index'
 
-    export default Routes;
+function App () {
+  return (
+    <div className='App'>
+      <Index />
+    </div>
+  )
+}
+
+export default App

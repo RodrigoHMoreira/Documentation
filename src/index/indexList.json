@@ -1,102 +1,140 @@
 [
-    {
-      "title": "chapter 1",
-      "link": "/chapterOne",
-      "video": 1,
-      "submenus": [
-        {
-          "title": "section 1",
-          "link": "#One",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        },
-        {
-          "title": "section 2",
-          "link": "#Two",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Murilo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        },
-        {
-          "title": "section 3",
-          "link": "#Three",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Sérgio ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        }
-      ]
-    },
-    {
-      "title": "chapter 2",
-      "link": "/chapterTwo",
-      "video": 2,
-      "submenus": [
-        {
-          "title": "section 4",
-          "link": "#Four",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Marcos ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        },
-        {
-          "title": "section 5",
-          "link": "#Five",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Carlos ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        },
-        {
-          "title": "section 6",
-          "link": "#Six",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Tiago ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        }
-      ]
-    },
-    {
-      "title": "chapter 3",
-      "link": "/chapterThree",
-      "video": 3,
-      "submenus": [
-        {
-          "title": "section 7",
-          "link": "#Seven",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Danilo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        },
-        {
-          "title": "section 8",
-          "link": "#Eight",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Inácio ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        },
-        {
-          "title": "section 9",
-          "link": "#Nine",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Marco ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        }
-      ]
+  {
+    "title": "Construção do Bot",
+    "link": "/construção-do-bot",
+    "image": "https://img.elo7.com.br/product/zoom/2A1A4B7/big-poster-filme-joker-coringa-joaquin-phoenix-tam-90x60-cm-nerd.jpg",
+    "text": "Para iniciarmos, precisamos compreender o que é um Chatbot, e qual a sua função. Um Chatbot é um sistema de criação de inteligência artificial, que produz respostas automáticas para seus usuários, dentro de um chat de mensagens. Dessa forma, é integrado a empresas, hospitais, cafeterias e demais comércios. Personalizado a sua maneira, e inserido aonde desejar.Entretanto, para que a Integração seja concebida é necessário saber como funciona cada parte de uma “criação”. Vamos lá?!",
+    "video": "https://www.youtube.com/embed/JfeIPKewIXI",
+    "submenus": [
+      {
+        "title": "Criando seu Bot",
+        "link": "#criando-seu-bot",
+        "text1": "Local que será inserido o fluxo de mensagens, ordem e organização de conversas, e a personalização do mesmo.",
+        "text2": ""
       },
       {
-      "title": "chapter 4",
-      "link": "/chapterFour",
-      "video": 4,
-      "submenus": [
-        {
-          "title": "section 10",
-          "link": "#Ten",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Eduardo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        },
-        {
-          "title": "section 11",
-          "link": "#Eleven",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Marcelo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        },
-        {
-          "title": "section 12",
-          "link": "#Twelve",
-          "text1":"Reinaldo ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor.",
-          "text2":"Marcel ipsum dolor sit amet consectetur adipiscing elit id dictum iaculis fermentum feugiat venenatis mauris,consequat tellus ut lobortis blandit himenaeos mattis nisi est magnis sapien aptent. Sollicitudin augue suspendissedapibus non aliquet sodales accumsan nulla, porttitor ultricies molestie odio faucibus eget hendrerit tellus inceptos, massa risus torquent vitae erat maximus semper. Venenatis fames mattis semper tincidunt per eros finibusnon morbi pulvinar montes volutpat. Luctus lacinia porttitor natoque semper eleifend varius est id tincidunt quam, risus lobortis sit condimentum donec justo vel aptent ultrices augue, convallis maecenas quisque nisi ligula commodo pulvinar pretium nibh. Dis aliquet venenatis sit finibus commodo scelerisque lorem senectus, aenean id consectetur ut proin porta. Dignissim nullam maximus phasellus potenti consectetur sollicitudin quam elit feugiat, montes neque dictumst enim lectus maecenas aenean tincidunt odio ipsum, tempus magna finibus interdum consequat tristique hac porttitor."
-        }
-      ]
-        }
-  ]
+        "title": "Blocos",
+        "link": "#blocos",
+        "text1": "Local que será inserido o fluxo de mensagens, ordem e organização de conversas, e a personalização do mesmo.",
+        "text2": ""
+      }
+    ]
+  },
+  {
+    "title": "Desenvolvendo Conversa",
+    "link": "/desenvolvendo-conversa",
+    "image": "https://i.pinimg.com/originals/74/99/73/7499739c82325456dc82cbabed130ca7.jpg",
+    "text": "Neste campo, a Inteligência artificial guarda informações acrescentadas nos “balões-chat”, cria um fluxo de conversas e aguarda a resposta do usuário/cliente.",
+    "video": "https://www.youtube.com/embed/7xBBuwyx4s8",
+    "submenus": [
+      {
+        "title": "Conversas",
+        "link": "#conversas",
+        "text1": "Adicionando seu primeiro texto, o usuário precisará de algumas ferramentas que o ajudarão nesse processo de criação.",
+        "text2": ""
+      },
+      {
+        "title": "Tempo entre mensagens (!)",
+        "link": "#tempo-entre-mensagens(!)",
+        "text1": "Classificado com a cor Laranja, como o próprio nome nos descreve, está opção permite que o usuário adicione um tempo entre as mensagens. Está função é executada quando, ao início de uma frase o usuário insere (!) exclamação, como comando para o bot. Exemplo: !2000. Desta forma o tempo será adicionado.",
+        "text2": ""
+      },
+      {
+        "title": "Variável ($)",
+        "link": "#variável($)",
+        "text1": "Ao adicionar ($) ao início de uma palavra-chave, o usuário cria uma variável. Classificado com a cor verde, está opção comunica ao bot, que aquele bloco necessita de uma resposta do cliente, ou seja, o cliente só sairá do mesmo, caso a variável seja respondida. Se o tempo expirar, ou não houver resposta, o cliente será redirecionado para outro bloco. Exemplo: Abandono.",
+        "text2": ""
+      },
+      {
+        "title": "Setas (^)",
+        "link": "#setas(^)",
+        "text1": "Após realizar qualquer alteração, ou criar um novo bloco, o usuário precisa clicar no botão “SALVAR”, para que seu trabalho seja salvo, caso contrário as informações adicionadas ao chat, não serão aplicadas.",
+        "text2": ""
+      },
+      {
+        "title": "Salvar",
+        "link": "#salvar",
+        "text1": "Ao adicionar ($) ao início de uma palavra-chave, o usuário cria uma variável. Classificado com a cor verde, está opção comunica ao bot, que aquele bloco necessita de uma resposta do cliente, ou seja, o cliente só sairá do mesmo, caso a variável seja respondida. Se o tempo expirar, ou não houver resposta, o cliente será redirecionado para outro bloco. Exemplo: Abandono.",
+        "text2": ""
+      },
+      {
+        "title": "Upload",
+        "link": "#upload",
+        "text1": "Está nuvem concede ao usuário, a opção de acrescentar e adicionar arquivos de imagem e vídeo a conversa.",
+        "text2": ""
+      }
+    ]
+  },
+  {
+    "title": "Criando Condições",
+    "link": "/criando-condições",
+    "image": "https://m.media-amazon.com/images/M/MV5BYWQ3Y2Q5OWUtYjMyMC00MWY2LThmMTMtNzI3NzZmYmExMzFhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "text": "As condições servem para criar uma organização estável em seu chat, determina ações transferindo o cliente de um bloco para outro. Dessa forma seu projeto não se transforma em uma verdadeira bagunça.",
+    "video": "https://www.youtube.com/embed/EE-4GvjKcfs",
+    "submenus": [
+      {
+        "title": "Condições de Saída",
+        "link": "#condições-de-saída",
+        "text1": "Está condição permite que ao finalizar uma conversa, o cliente ou usuário, seja redirecionado para outro bloco. Exemplo: depois que o cliente finalizar uma conversa no bloco “nome”, o usuário cria uma condição que o redirecionará para o bloco 'telefone'.",
+        "text2": ""
+      },
+      {
+        "title": "Condição Dinâmica",
+        "link": "#condição-dinâmica",
+        "text1": "Como o próprio nome nos leva a concluir, está é uma condição dinâmica, ou seja, uma condição flexível. Está opção permite que o usuário crie uma saída a qualquer momento da conversa, ou seja, cria-se uma condição que o da liberdade para sair em qualquer parte da conversa, de um bloco para outro.",
+        "text2": ""
+      }
+    ]
+  },
+  {
+    "title": "Tempo de expiração",
+    "link": "/tempo-de-expiração",
+    "image": "https://i.pinimg.com/originals/21/7d/36/217d3697f17dc008deb0f0befc930a07.jpg",
+    "text": "Neste tópico, como o significado literal da palavra, o usuário pode adicionar um “tempo-limite” para cada bloco criado, caso o cliente não responda à pergunta.",
+    "video": "https://www.youtube.com/embed/pKUu6PKNyzk",
+    "submenus": [
+      {
+        "title": "Tempo Limite ou Tempo de Expiração",
+        "link": "#tempo-limite-ou-tempo-de-expiração",
+        "text1": "Está opção determina o prazo que cada bloco expira (tempo limite do bloco), após a escolha do limite de tempo, o usuário pode escolher qual o bloco de destino, que seu cliente será redirecionado após a expiração.",
+        "text2": ""
+      }
+    ]
+  },
+  {
+    "title": "Testando seu Chatbot",
+    "link": "/testando-seu-chatbot",
+    "image": "https://m.media-amazon.com/images/M/MV5BZThjMmQ5YjktMTUyMC00MjljLWJmMTAtOWIzNDIzY2VhNzQ0XkEyXkFqcGdeQXVyMTAyNjg4NjE0._V1_.jpg",
+    "text": "Já imaginou criar um projeto com a visão de vendedor e consumidor? Com está opção é possível!",
+    "video": "https://www.youtube.com/embed/7ksH7-9vWZ0",
+    "submenus": [
+      {
+        "title": "Testar Bot",
+        "link": "#testar-bot",
+        "text1": "Local de chat onde o usuário poderá ter uma experiência real como cliente, e testar seu Chatbot. Permite que o usuário faça perguntas, e descubra potenciais erros de escrita, “bugs”, ou até mesmo falhas na configuração. Está opção dará ao usuário, a vantagem de consertar erros, apreciar o resultado da Inteligência Artificial, a confiança de que seu trabalho e esforço valeram a pena, e a segurança de que seu bot chegará impecável ao seu cliente.",
+        "text2": ""
+      }
+    ]
+  },
+  {
+    "title": "Opções de entrada e saída",
+    "link": "/opções-de-entrada-e-saída",
+    "image": "https://m.media-amazon.com/images/M/MV5BOTU5MDg3OGItZWQ1Ny00ZGVmLTg2YTUtMzBkYzQ1YWIwZjlhXkEyXkFqcGdeQXVyNTAzMTY4MDA@._V1_.jpg",
+    "text": "As opções de entrada e saída servem para receber e enviar dados ou até para criar um comando novo.",
+    "video": "https://www.youtube.com/embed/MKrUZ36IVAY",
+    "submenus": [
+      {
+        "title": "HTTP",
+        "link": "#http",
+        "text1": "Consiste em receber e enviar dados a outras API´s e externas.",
+        "text2": ""
+      },
+      {
+        "title": "Executar Script",
+        "link": "#executar-script",
+        "text1": "Permite que o usuário execute um comando ao bot, utilizando uma nova linha de código criada pelo mesmo.",
+        "text2": ""
+      }
+    ]
+  }
+]

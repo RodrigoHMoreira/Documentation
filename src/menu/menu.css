@@ -1,63 +1,57 @@
-/* html {
-scroll-behavior: smooth;
-} */
-
 .sideBar {
-  width: 16%;
-  height: calc(100% - 150px);
-  position: fixed;
-  top: 130px;
-  left: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  z-index: 8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 16%;
+	height: calc(100% - 150px);
+	position: fixed;
+	top: 130px;
+	left: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	z-index: 8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .inputSearch {
-  width: 85%;
+	width: 85%;
 }
 
-.link{
-  margin:0;
-  padding:0;
-  text-decoration:none;
+.link {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
 
 #topicos {
-  width: 85%;
-  border-radius: 3px;
-  color: #424242;
+	width: 85%;
+	border-radius: 3px;
+	color: #424242;
 }
 
-.sideBar .title{
-  border: 0.1px solid #e0e0e0;
-  border-radius: 5px;
+.sideBar .title {
+	border: 0.1px solid rgb(220, 220, 220);
+	border-radius: 5px;
 }
 
-.sideBar .title :hover{
-  background: #e0e0e0;
+.sideBar .title :hover {
+	background: #e0e0e0;
 }
 
-.sideBar .item{
-  border: 0.1px solid #e0e0e0;
-  border-radius: 5px;
+.sideBar .item {
+	border: 0.1px solid rgb(220, 220, 220);
+	border-radius: 5px;
+	word-break: break-all;
 }
 
-.sideBar .item :hover{
-  background: #e0e0e0;
+.sideBar .item :hover {
+	background: #e0e0e0;
 }
 
-.sideBar .erro{
-width: 85%;
-padding: 10px;
-border: 0.1px solid #e0e0e0;
-word-break: break-all;
-border-radius: 5px;
+.sideBar .erro {
+	width: 85%;
+	padding: 10px;
+	border: 0.1px solid rgb(220, 220, 220);
+	border-radius: 5px;
+	word-break: break-all;
 }
-
-
-
 
