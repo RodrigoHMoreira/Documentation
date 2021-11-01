@@ -8,13 +8,13 @@
     "submenus": [
       {
         "title": "Criando seu Bot",
-        "link": "#criando-seu-bot",
+        "link": "/criando-seu-bot",
         "text1": "Local que será inserido o fluxo de mensagens, ordem e organização de conversas, e a personalização do mesmo.",
         "text2": ""
       },
       {
         "title": "Blocos",
-        "link": "#blocos",
+        "link": "/blocos",
         "text1": "Local que será inserido o fluxo de mensagens, ordem e organização de conversas, e a personalização do mesmo.",
         "text2": ""
       }
@@ -29,37 +29,37 @@
     "submenus": [
       {
         "title": "Conversas",
-        "link": "#conversas",
+        "link": "/conversas",
         "text1": "Adicionando seu primeiro texto, o usuário precisará de algumas ferramentas que o ajudarão nesse processo de criação.",
         "text2": ""
       },
       {
         "title": "Tempo entre mensagens (!)",
-        "link": "#tempo-entre-mensagens(!)",
+        "link": "/tempo-entre-mensagens(!)",
         "text1": "Classificado com a cor Laranja, como o próprio nome nos descreve, está opção permite que o usuário adicione um tempo entre as mensagens. Está função é executada quando, ao início de uma frase o usuário insere (!) exclamação, como comando para o bot. Exemplo: !2000. Desta forma o tempo será adicionado.",
         "text2": ""
       },
       {
         "title": "Variável ($)",
-        "link": "#variável($)",
+        "link": "/variável($)",
         "text1": "Ao adicionar ($) ao início de uma palavra-chave, o usuário cria uma variável. Classificado com a cor verde, está opção comunica ao bot, que aquele bloco necessita de uma resposta do cliente, ou seja, o cliente só sairá do mesmo, caso a variável seja respondida. Se o tempo expirar, ou não houver resposta, o cliente será redirecionado para outro bloco. Exemplo: Abandono.",
         "text2": ""
       },
       {
         "title": "Setas (^)",
-        "link": "#setas(^)",
+        "link": "/setas(^)",
         "text1": "Após realizar qualquer alteração, ou criar um novo bloco, o usuário precisa clicar no botão “SALVAR”, para que seu trabalho seja salvo, caso contrário as informações adicionadas ao chat, não serão aplicadas.",
         "text2": ""
       },
       {
         "title": "Salvar",
-        "link": "#salvar",
+        "link": "/salvar",
         "text1": "Ao adicionar ($) ao início de uma palavra-chave, o usuário cria uma variável. Classificado com a cor verde, está opção comunica ao bot, que aquele bloco necessita de uma resposta do cliente, ou seja, o cliente só sairá do mesmo, caso a variável seja respondida. Se o tempo expirar, ou não houver resposta, o cliente será redirecionado para outro bloco. Exemplo: Abandono.",
         "text2": ""
       },
       {
         "title": "Upload",
-        "link": "#upload",
+        "link": "/upload",
         "text1": "Está nuvem concede ao usuário, a opção de acrescentar e adicionar arquivos de imagem e vídeo a conversa.",
         "text2": ""
       }
@@ -74,13 +74,13 @@
     "submenus": [
       {
         "title": "Condições de Saída",
-        "link": "#condições-de-saída",
+        "link": "/condições-de-saída",
         "text1": "Está condição permite que ao finalizar uma conversa, o cliente ou usuário, seja redirecionado para outro bloco. Exemplo: depois que o cliente finalizar uma conversa no bloco “nome”, o usuário cria uma condição que o redirecionará para o bloco 'telefone'.",
         "text2": ""
       },
       {
         "title": "Condição Dinâmica",
-        "link": "#condição-dinâmica",
+        "link": "/condição-dinâmica",
         "text1": "Como o próprio nome nos leva a concluir, está é uma condição dinâmica, ou seja, uma condição flexível. Está opção permite que o usuário crie uma saída a qualquer momento da conversa, ou seja, cria-se uma condição que o da liberdade para sair em qualquer parte da conversa, de um bloco para outro.",
         "text2": ""
       }
@@ -95,7 +95,7 @@
     "submenus": [
       {
         "title": "Tempo Limite ou Tempo de Expiração",
-        "link": "#tempo-limite-ou-tempo-de-expiração",
+        "link": "/tempo-limite-ou-tempo-de-expiração",
         "text1": "Está opção determina o prazo que cada bloco expira (tempo limite do bloco), após a escolha do limite de tempo, o usuário pode escolher qual o bloco de destino, que seu cliente será redirecionado após a expiração.",
         "text2": ""
       }
@@ -110,7 +110,7 @@
     "submenus": [
       {
         "title": "Testar Bot",
-        "link": "#testar-bot",
+        "link": "/testar-bot",
         "text1": "Local de chat onde o usuário poderá ter uma experiência real como cliente, e testar seu Chatbot. Permite que o usuário faça perguntas, e descubra potenciais erros de escrita, “bugs”, ou até mesmo falhas na configuração. Está opção dará ao usuário, a vantagem de consertar erros, apreciar o resultado da Inteligência Artificial, a confiança de que seu trabalho e esforço valeram a pena, e a segurança de que seu bot chegará impecável ao seu cliente.",
         "text2": ""
       }
@@ -125,13 +125,13 @@
     "submenus": [
       {
         "title": "HTTP",
-        "link": "#http",
+        "link": "/http",
         "text1": "Consiste em receber e enviar dados a outras API´s e externas.",
         "text2": ""
       },
       {
         "title": "Executar Script",
-        "link": "#executar-script",
+        "link": "/executar-script",
         "text1": "Permite que o usuário execute um comando ao bot, utilizando uma nova linha de código criada pelo mesmo.",
         "text2": ""
       }

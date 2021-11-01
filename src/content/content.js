@@ -42,7 +42,6 @@ export default function ContentDoc () {
                 allowfullscreen='true'
                 className='video'
 							/>
-              {console.log(item.video)}
             </div>
             <br />
             <br />
