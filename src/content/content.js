@@ -29,7 +29,7 @@ export default function ContentDoc () {
               {item.title}
             </h1>
             <div className='imageContent'>
-              <img src={item.image} className='image' />
+              <img  src={item.image} className='image' alt='imgMenu'/>
             </div>
             <br />
             <p>
@@ -37,13 +37,11 @@ export default function ContentDoc () {
             </p>
             <br />
             <div className='videoContent'>
-              {/* <video className='video' controls> */}
               <embed
                 src={item.video}
                 allowfullscreen='true'
                 className='video'
 							/>
-              {/* </video> */}
               {console.log(item.video)}
             </div>
             <br />

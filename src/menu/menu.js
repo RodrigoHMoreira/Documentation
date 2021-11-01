@@ -16,32 +16,23 @@ import Tooltip from '@mui/material/Tooltip'
 import { Link } from 'react-scroll'
 
 export default function MenuDoc () {
-  const [anchorEl, setAnchorEl] = useState(null)
   const [searchResult, setSearchResult] = useState('')
   const [contentValue, setContentValue] = useState(menuList)
-  const [contentValue2, setContentValue2] = useState(menuList)
-
-  const handleClose = () => {
-    setAnchorEl(null)
-  }
 
   const searchList = () => {
-    if (searchResult != '') {
-      const newList = contentValue2.filter(value =>
+    if (searchResult !== '') {
+      const newList = menuList.filter(value =>
 				value.title.includes(searchResult)
 			)
       setContentValue(newList)
     } else {
-      setContentValue(contentValue2)
+      setContentValue(menuList)
     }
   }
 
   useEffect(
-		() => {
-  searchList()
-},
-		[searchResult]
-	)
+    searchList
+  ,[searchResult])
 
   return (
     <div className='sideBar'>
@@ -106,7 +97,7 @@ export default function MenuDoc () {
                 duration={500}
                 hashSpy
 												>
-                <MenuItem onClick={handleClose}>
+                <MenuItem>
                   <DescriptionIcon sx={{ mr: 1 }} />
                   <Typography variant='inherit' noWrap>
                     {submenu.title}
