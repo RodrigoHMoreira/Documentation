@@ -2,7 +2,7 @@
   {
     "title": "Construção do Bot",
     "link": "/construção-do-bot",
-    "image": "https://img.elo7.com.br/product/zoom/2A1A4B7/big-poster-filme-joker-coringa-joaquin-phoenix-tam-90x60-cm-nerd.jpg",
+    "image": "https://i.imgur.com/UwEcxTP.png",
     "text": "Para iniciarmos, precisamos compreender o que é um Chatbot, e qual a sua função. Um Chatbot é um sistema de criação de inteligência artificial, que produz respostas automáticas para seus usuários, dentro de um chat de mensagens. Dessa forma, é integrado a empresas, hospitais, cafeterias e demais comércios. Personalizado a sua maneira, e inserido aonde desejar.Entretanto, para que a Integração seja concebida é necessário saber como funciona cada parte de uma “criação”. Vamos lá?!",
     "video": "https://www.youtube.com/embed/JfeIPKewIXI",
     "submenus": [
@@ -23,7 +23,7 @@
   {
     "title": "Desenvolvendo Conversa",
     "link": "/desenvolvendo-conversa",
-    "image": "https://i.pinimg.com/originals/74/99/73/7499739c82325456dc82cbabed130ca7.jpg",
+    "image": "https://imgur.com/XXP92Zh.png",
     "text": "Neste campo, a Inteligência artificial guarda informações acrescentadas nos “balões-chat”, cria um fluxo de conversas e aguarda a resposta do usuário/cliente.",
     "video": "https://www.youtube.com/embed/7xBBuwyx4s8",
     "submenus": [
@@ -68,7 +68,7 @@
   {
     "title": "Criando Condições",
     "link": "/criando-condições",
-    "image": "https://m.media-amazon.com/images/M/MV5BYWQ3Y2Q5OWUtYjMyMC00MWY2LThmMTMtNzI3NzZmYmExMzFhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "image": "https://imgur.com/ncQi2Wm.png",
     "text": "As condições servem para criar uma organização estável em seu chat, determina ações transferindo o cliente de um bloco para outro. Dessa forma seu projeto não se transforma em uma verdadeira bagunça.",
     "video": "https://www.youtube.com/embed/EE-4GvjKcfs",
     "submenus": [
@@ -89,7 +89,7 @@
   {
     "title": "Tempo de expiração",
     "link": "/tempo-de-expiração",
-    "image": "https://i.pinimg.com/originals/21/7d/36/217d3697f17dc008deb0f0befc930a07.jpg",
+    "image": "https://imgur.com/vGkRKv8.png",
     "text": "Neste tópico, como o significado literal da palavra, o usuário pode adicionar um “tempo-limite” para cada bloco criado, caso o cliente não responda à pergunta.",
     "video": "https://www.youtube.com/embed/pKUu6PKNyzk",
     "submenus": [
@@ -104,7 +104,7 @@
   {
     "title": "Testando seu Chatbot",
     "link": "/testando-seu-chatbot",
-    "image": "https://m.media-amazon.com/images/M/MV5BZThjMmQ5YjktMTUyMC00MjljLWJmMTAtOWIzNDIzY2VhNzQ0XkEyXkFqcGdeQXVyMTAyNjg4NjE0._V1_.jpg",
+    "image": "https://imgur.com/ih434lM.png",
     "text": "Já imaginou criar um projeto com a visão de vendedor e consumidor? Com está opção é possível!",
     "video": "https://www.youtube.com/embed/7ksH7-9vWZ0",
     "submenus": [
@@ -119,7 +119,7 @@
   {
     "title": "Opções de entrada e saída",
     "link": "/opções-de-entrada-e-saída",
-    "image": "https://m.media-amazon.com/images/M/MV5BOTU5MDg3OGItZWQ1Ny00ZGVmLTg2YTUtMzBkYzQ1YWIwZjlhXkEyXkFqcGdeQXVyNTAzMTY4MDA@._V1_.jpg",
+    "image": "https://imgur.com/uM0s96d",
     "text": "As opções de entrada e saída servem para receber e enviar dados ou até para criar um comando novo.",
     "video": "https://www.youtube.com/embed/MKrUZ36IVAY",
     "submenus": [
@@ -133,6 +133,36 @@
         "title": "Executar Script",
         "link": "/executar-script",
         "text1": "Permite que o usuário execute um comando ao bot, utilizando uma nova linha de código criada pelo mesmo.",
+        "text2": ""
+      }
+    ]
+  },
+  {
+    "title": "Template",
+    "link": "/template",
+    "image": "https://imgur.com/bDqgiPJ.png",
+    "text": "A template, representada por {{1}}, é o primeiro contato de usuário com o cliente.",
+    "video": "https://www.youtube.com/embed/gmA6MrX81z4",
+    "submenus": [
+      {
+        "title": "Executar Template",
+        "link": "/executar-template",
+        "text1": "Nesta opção é possível que o usuário possa criar até três botões de opções.A template necessita de uma aprovação, que pode levar aproximadamente 24hrs.Também é possível adicionar uma template como mensagem durante uma conversa; está é a única forma de criar um botão. Ainda em “Templates”, o usuário pode adicionar qualquer palavra, ou ação, através de uma ou mais variáveis.",
+        "text2": ""
+      }
+    ]
+  },
+  {
+    "title": "Disparo",
+    "link": "/disparo",
+    "image": "https://imgur.com/TGYwCPR.png",
+    "text": "Como um real disparo, o usuário pode otimizar seu tempo e “disparar” várias templates ao mesmo tempo, para vários clientes.",
+    "video": "https://www.youtube.com/embed/LembwKDo1Dk",
+    "submenus": [
+      {
+        "title": "Executar Disparo",
+        "link": "/executar-disparo",
+        "text1": "Esta ferramenta que permite, que o usuário envie uma template para vários clientes ao mesmo tempo, através de uma planilha; A planilha necessita de pelo menos um campo chamado “Telefone” ou “Contato”, no qual será enviado a mensagem para o cliente.",
         "text2": ""
       }
     ]

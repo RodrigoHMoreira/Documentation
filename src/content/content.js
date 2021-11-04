@@ -3,6 +3,7 @@ import './content.css'
 import contentList from '../index/indexList.json'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import Divider from '@mui/material/Divider'
+import ZoomInIcon from '@mui/icons-material/ZoomIn';
 
 import { Link } from 'react-scroll'
 
@@ -29,7 +30,19 @@ export default function ContentDoc () {
               {item.title}
             </h1>
             <div className='imageContent'>
-              <img  src={item.image} className='image' alt='imgMenu'/>
+              <img src={item.image} className='image' alt='imgContent' />
+                {console.log(item.image)}
+              <Link
+                activeClass='link'
+                to={item.image}
+                spy
+                smooth
+                offset={-120}
+                duration={2000}
+                hashSpy
+							>
+                <ZoomInIcon className='ZoomInIcon' />
+              </Link>
             </div>
             <br />
             <p>
