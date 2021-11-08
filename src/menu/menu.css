@@ -1,5 +1,5 @@
 .sideBar {
-	width: 16%;
+	width: 210px;
 	height: calc(100% - 150px);
 	position: fixed;
 	top: 130px;
@@ -13,7 +13,8 @@
 }
 
 .inputSearch {
-	width: 85%;
+	width: 200px;
+	padding-bottom: 20px;
 }
 
 .link {
@@ -23,12 +24,17 @@
 }
 
 #topicos {
-	width: 85%;
+	width: 200px;
 	border-radius: 3px;
 	color: #424242;
 }
 
-.sideBar .title {
+.sumaryContent{
+	display: flex;
+}
+
+
+.sideBar .sumary {
 	border: 0.1px solid rgb(220, 220, 220);
 	border-radius: 5px;
 }
@@ -40,7 +46,6 @@
 .sideBar .item {
 	border: 0.1px solid rgb(220, 220, 220);
 	border-radius: 5px;
-	word-break: break-all;
 }
 
 .sideBar .item :hover {

@@ -21,8 +21,8 @@
     ]
   },
   {
-    "title": "Desenvolvendo Conversa",
-    "link": "/desenvolvendo-conversa",
+    "title": "Desenvolver Conversa",
+    "link": "/desenvolver-conversa",
     "image": "https://imgur.com/XXP92Zh.png",
     "text": "Neste campo, a Inteligência artificial guarda informações acrescentadas nos “balões-chat”, cria um fluxo de conversas e aguarda a resposta do usuário/cliente.",
     "video": "https://www.youtube.com/embed/7xBBuwyx4s8",
@@ -66,8 +66,8 @@
     ]
   },
   {
-    "title": "Criando Condições",
-    "link": "/criando-condições",
+    "title": "Criar Condições",
+    "link": "/criar-condições",
     "image": "https://imgur.com/ncQi2Wm.png",
     "text": "As condições servem para criar uma organização estável em seu chat, determina ações transferindo o cliente de um bloco para outro. Dessa forma seu projeto não se transforma em uma verdadeira bagunça.",
     "video": "https://www.youtube.com/embed/EE-4GvjKcfs",
@@ -102,8 +102,8 @@
     ]
   },
   {
-    "title": "Testando seu Chatbot",
-    "link": "/testando-seu-chatbot",
+    "title": "Testar seu Chatbot",
+    "link": "/testar-seu-chatbot",
     "image": "https://imgur.com/ih434lM.png",
     "text": "Já imaginou criar um projeto com a visão de vendedor e consumidor? Com está opção é possível!",
     "video": "https://www.youtube.com/embed/7ksH7-9vWZ0",

@@ -30,9 +30,7 @@ export default function MenuDoc () {
     }
   }
 
-  useEffect(
-    searchList
-  ,[searchResult])
+  useEffect(searchList, [searchResult])
 
   return (
     <div className='sideBar'>
@@ -41,7 +39,7 @@ export default function MenuDoc () {
           placeholder='Pesquisar'
           InputProps={{
             startAdornment: (
-              <InputAdornment>
+              <InputAdornment position='start'>
                 <SearchIcon />
               </InputAdornment>
 						)
@@ -50,7 +48,6 @@ export default function MenuDoc () {
           onChange={e => setSearchResult(e.target.value)}
 				/>
       </div>
-      <br />
       {contentValue.length === 0
 				? <div className='erro'>
   <p>
@@ -59,9 +56,9 @@ export default function MenuDoc () {
     <strong>"</strong>
   </p>
 					</div>
-				: contentValue.map(item => {
+				: contentValue.map((item, index) => {
   return (
-    <Accordion id='topicos'>
+    <Accordion id='topicos' key={index}>
       <div className='title'>
         <Link
           activeClass='link'
@@ -74,19 +71,19 @@ export default function MenuDoc () {
 									>
           <div className='sumary'>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls='panel1a-content'
-              id='panel1a-header'
+              expandIcon={<ExpandMoreIcon sx={{ ml: 1 }} />}
 											>
-              <FolderOpenIcon sx={{ mr: 1 }} />
-              {item.title}
+              <div className='sumaryContent'>
+                <FolderOpenIcon sx={{ mr: 1 }} />
+                {item.title}
+              </div>
             </AccordionSummary>
           </div>
         </Link>
       </div>
-      {item.submenus.map(submenu => {
+      {item.submenus.map((submenu, submenuIndex) => {
         return (
-          <Tooltip title={submenu.title}>
+          <Tooltip title={submenu.title} key={submenuIndex}>
             <div className='item'>
               <Link
                 activeClass='link'

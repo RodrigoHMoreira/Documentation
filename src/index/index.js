@@ -5,9 +5,15 @@ import ContentDoc from '../content/content'
 export default function Index () {
   return (
     <div className='index'>
-      <HeaderDoc />
-      <MenuDoc />
-      <ContentDoc />
+      <div>
+        <HeaderDoc />
+      </div>
+      <div>
+        <MenuDoc />
+      </div>
+      <div>
+        <ContentDoc />
+      </div>
     </div>
   )
 }

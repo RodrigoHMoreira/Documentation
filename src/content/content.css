@@ -3,7 +3,7 @@
     overflow-x: hidden; */
 	position: absolute;
 	top: 100px;
-	left: calc(16% + 20px);
+	left: calc(210px + 20px);
 	text-align: justify;
 	font-size: 18;
 	height: calc(100% - 100px);
@@ -13,6 +13,8 @@
 .content {
 	width: 99.2%;
 	color: #424242;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .content h1 {
@@ -28,6 +30,7 @@
 	border-radius: 50%;
 	background: #616161;
 	color: #fff;
+	z-index: 6;
 }
 
 .iconButtonTop:hover {
@@ -43,26 +46,30 @@
 .imageContent {
 	width: 450px;
 	height: 250px;
-	position: relative;
-	left: 25%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 25%;
 }
 
-.videoContent embed, .imageContent img {
+.videoContent embed,
+.imageContent img {
 	width: 100%;
 	height: 100%;
 	border-radius: 3%;
 }
 
-.imageContent .ZoomInIcon {
-	position: absolute;
-	bottom: 0;
-	right: 0;
+.imageContent img:hover{
+	cursor: pointer;
 }
 
 .content .divider {
 	background: rgb(220, 220, 220);
 }
 
- .modalZoom{
-	background: none;
+.imageZoom {
+	margin-top: 30px;
+	margin-left: 110px;
+	width: 1250px;
+	height: 750px;
+	border-radius: 5px;
 }
