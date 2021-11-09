@@ -34,7 +34,14 @@ export default function ContentDoc () {
             </h1>
             <Divider className='divider' />
             <div className='imageContent'>
-              <img src={item.image} className='image' alt='imgContent'  onClick={() => {return(setOpen(true), setImage(item.image))}} />
+              <img
+                src={item.image}
+                className='image'
+                alt='imgContent'
+                onClick={() => {
+                  return setOpen(true), setImage(item.image)
+                }}
+							/>
             </div>
             <p>
               {item.text}
@@ -61,8 +68,8 @@ export default function ContentDoc () {
         )
       })}
       <div>
-        <Modal open={open} onClose={() => setOpen(false)}>
-        <img src={image} className='imageZoom' alt='imgContent' />
+        <Modal open={open} onClick={() => setOpen(false)}>
+          <img src={image} className='imageZoom' alt='imgContent' />
         </Modal>
       </div>
     </div>
