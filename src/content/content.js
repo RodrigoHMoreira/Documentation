@@ -47,7 +47,7 @@ export default function ContentDoc () {
               {item.text}
             </p>
             <div className='videoContent'>
-              <embed src={item.video} allowFullScreen className='video' />
+              <iframe src={item.video} allowFullScreen className='video' />
             </div>
             {item.submenus.map((value, cont) => {
               return (
