@@ -1,15 +1,6 @@
 .sideBar {
-	width: 210px;
-	height: calc(100% - 150px);
-	position: fixed;
-	top: 130px;
-	left: 0;
-	overflow-y: auto;
-	overflow-x: hidden;
-	z-index: 8;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	padding: 10px;
+	width: 100%;
 }
 
 .inputSearch {

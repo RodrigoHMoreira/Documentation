@@ -46,9 +46,9 @@ export default function ContentDoc () {
             <p>
               {item.text}
             </p>
-            <div className='videoContent'>
+            {/* <div className='videoContent'>
               <iframe src={item.video} allowFullScreen className='video' />
-            </div>
+            </div> */}
             {item.submenus.map((value, cont) => {
               return (
                 <div id={value.link} key={cont} className='content2'>
@@ -68,7 +68,7 @@ export default function ContentDoc () {
         )
       })}
       <div>
-        <Modal open={open} onClick={() => setOpen(false)}>
+        <Modal id="modal" open={open} onClick={() => setOpen(false)}>
           <img src={image} className='imageZoom' alt='imgContent' />
         </Modal>
       </div>

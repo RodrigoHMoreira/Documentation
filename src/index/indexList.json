@@ -2,7 +2,7 @@
   {
     "title": "Construção do Bot",
     "link": "/construção-do-bot",
-    "image": "https://i.imgur.com/UwEcxTP.png",
+    "image": "https://imgur.com/awaGG1f.png",
     "text": "Para iniciarmos, precisamos compreender o que é um Chatbot, e qual a sua função. Um Chatbot é um sistema de criação de inteligência artificial, que produz respostas automáticas para seus usuários, dentro de um chat de mensagens. Dessa forma, é integrado a empresas, hospitais, cafeterias e demais comércios. Personalizado a sua maneira, e inserido aonde desejar.Entretanto, para que a Integração seja concebida é necessário saber como funciona cada parte de uma “criação”. Vamos lá?!",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -23,7 +23,7 @@
   {
     "title": "Desenvolver Conversa",
     "link": "/desenvolver-conversa",
-    "image": "https://imgur.com/XXP92Zh.png",
+    "image": "https://imgur.com/AQRJzwC.png",
     "text": "Neste campo, a Inteligência artificial guarda informações acrescentadas nos “balões-chat”, cria um fluxo de conversas e aguarda a resposta do usuário/cliente.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -68,7 +68,7 @@
   {
     "title": "Criar Condições",
     "link": "/criar-condições",
-    "image": "https://imgur.com/ncQi2Wm.png",
+    "image": "https://imgur.com/sU4RxzP.png",
     "text": "As condições servem para criar uma organização estável em seu chat, determina ações transferindo o cliente de um bloco para outro. Dessa forma seu projeto não se transforma em uma verdadeira bagunça.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -89,7 +89,7 @@
   {
     "title": "Tempo de expiração",
     "link": "/tempo-de-expiração",
-    "image": "https://imgur.com/vGkRKv8.png",
+    "image": "https://imgur.com/XgQinWJ.png",
     "text": "Neste tópico, como o significado literal da palavra, o usuário pode adicionar um “tempo-limite” para cada bloco criado, caso o cliente não responda à pergunta.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -104,7 +104,7 @@
   {
     "title": "Testar seu Chatbot",
     "link": "/testar-seu-chatbot",
-    "image": "https://imgur.com/ih434lM.png",
+    "image": "https://imgur.com/8k8StYR.png",
     "text": "Já imaginou criar um projeto com a visão de vendedor e consumidor? Com está opção é possível!",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -119,7 +119,7 @@
   {
     "title": "Opções de entrada e saída",
     "link": "/opções-de-entrada-e-saída",
-    "image": "https://imgur.com/uM0s96d.png",
+    "image": "https://imgur.com/mfLLx4W.png",
     "text": "As opções de entrada e saída servem para receber e enviar dados ou até para criar um comando novo.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -140,7 +140,7 @@
   {
     "title": "Template",
     "link": "/template",
-    "image": "https://imgur.com/bDqgiPJ.png",
+    "image": "https://imgur.com/wNKH3CU.png",
     "text": "A template, representada por {{1}}, é o primeiro contato de usuário com o cliente.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -155,7 +155,7 @@
   {
     "title": "Disparo",
     "link": "/disparo",
-    "image": "https://imgur.com/TGYwCPR.png",
+    "image": "https://imgur.com/gNJavWy.png",
     "text": "Como um real disparo, o usuário pode otimizar seu tempo e “disparar” várias templates ao mesmo tempo, para vários clientes.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [

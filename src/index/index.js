@@ -1,17 +1,18 @@
 import HeaderDoc from '../header/header'
 import MenuDoc from '../menu/menu'
 import ContentDoc from '../content/content'
+import './index.css'
 
 export default function Index () {
   return (
     <div className='index'>
-      <div>
+      <div className="headerIndex">
         <HeaderDoc />
       </div>
-      <div>
+      <div className="menuIndex">
         <MenuDoc />
       </div>
-      <div>
+      <div className="contentIndex">
         <ContentDoc />
       </div>
     </div>

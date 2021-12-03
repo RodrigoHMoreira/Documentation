@@ -22,7 +22,7 @@ export default function MenuDoc () {
   const searchList = () => {
     if (searchResult !== '') {
       const newList = menuList.filter(value =>
-				value.title.includes(searchResult)
+				value.title.toLowerCase().includes(searchResult)
 			)
       setContentValue(newList)
     } else {
