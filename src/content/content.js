@@ -68,9 +68,11 @@ export default function ContentDoc () {
         )
       })}
       <div>
-        <Modal id="modal" open={open} onClick={() => setOpen(false)}>
-          <img src={image} className='imageZoom' alt='imgContent' />
-        </Modal>
+        <div className='modal'>
+          <Modal id="modal" open={open} onClick={() => setOpen(false)}>
+            <img src={image} className='imageZoom' alt='imgContent' />
+          </Modal>
+        </div>
       </div>
     </div>
   )

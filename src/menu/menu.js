@@ -49,14 +49,16 @@ export default function MenuDoc () {
 				/>
       </div>
       {contentValue.length === 0
-				? <div className='erro'>
-  <p>
-    <strong>Não existe opção para "</strong>
-    {searchResult}
-    <strong>"</strong>
-  </p>
+				? 
+        <div className='erro'>
+            <p>
+              <strong>Não existe opção para "</strong>
+              {searchResult}
+              <strong>"</strong>
+            </p>
 					</div>
-				: contentValue.map((item, index) => {
+				: 
+        contentValue.map((item, index) => {
   return (
     <Accordion id='topicos' key={index}>
       <div className='title'>

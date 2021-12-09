@@ -1,11 +1,7 @@
-.sideBar {
-	padding: 10px;
-	width: 100%;
-}
 
 .inputSearch {
 	width: 200px;
-	padding-bottom: 20px;
+	padding: 0 0 20px 0;
 }
 
 .link {
@@ -25,20 +21,13 @@
 }
 
 
-.sideBar .sumary {
-	border: 0.1px solid rgb(220, 220, 220);
-	border-radius: 5px;
-}
-
-.sideBar .title :hover {
-	background: #e0e0e0;
-}
-
+.sideBar .sumary,
 .sideBar .item {
 	border: 0.1px solid rgb(220, 220, 220);
 	border-radius: 5px;
 }
 
+.sideBar .title :hover,
 .sideBar .item :hover {
 	background: #e0e0e0;
 }
@@ -51,3 +40,20 @@
 	word-break: break-all;
 }
 
+@media screen and (max-width: 740px){
+	.inputSearch {
+		width: 170px;
+		padding: 0 0 5px 0;
+	}
+		
+	#topicos {
+		width: 170px;
+	}	
+			
+	.sideBar .erro {
+		width: 85%;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	
+}
