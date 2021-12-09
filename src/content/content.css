@@ -51,10 +51,14 @@
 	border: none;
 }
 
+#modal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .imageZoom {
-	margin: 30px 110px;
-	width: 1250px;
-	height: 725px;
+	width: 90%;
 	border-radius: 5px;
 }
 
@@ -69,7 +73,6 @@
 	.content h1 {
 		font-size: 18pt;
 	}
-
 }
 
 @media screen and (max-width: 420px){
@@ -82,5 +85,17 @@
 	.content h1 {
 		font-size: 16pt;
 	}
-
 }
+
+@media screen and (max-width: 310px){
+	.videoContent iframe,
+	.imageContent img {
+		width: 200px;
+		height: 100px;
+	}
+
+	.content h1 {
+		font-size: 14pt;
+	}
+}
+

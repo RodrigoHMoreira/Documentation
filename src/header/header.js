@@ -1,58 +1,44 @@
 import React, { useState } from 'react'
 import './header.css'
 import logoLight from '../images/logoMybots_Light.png'
-import menuList from '../index/indexList.json'
-import Menu from '@material-ui/core/Menu'
-import MenuItem from '@mui/material/MenuItem'
-import Typography from '@mui/material/Typography'
 import IconButton from '@material-ui/core/Button'
-import MenuIcon from '@material-ui/icons/Menu';
-
-// import { Link } from 'react-scroll'
+import MenuIcon from '@material-ui/icons/Menu'
+import Drawer from '@material-ui/core/Drawer';
+import MenuHeader from '../menu/menu'
 
 export default function HeaderDoc () {
-  const [contentValue, setContentValue] = useState(menuList)
-  const [anchorEl, setAnchorEl] = useState(null)
+  
+  const [open, setOpen] = useState(false);
 
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget)
-  }
-
-  const handleClose = () => {
-    setAnchorEl(null)
-  }
+  const handleDrawerOpen = () => {
+    open === false ? setOpen(true) : setOpen(false)
+  };
 
   return (
     <header className='headerLight'>
+      <div className='menuHeader'>
+      <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="end"
+            onClick={handleDrawerOpen}
+          >
+            <MenuIcon />
+          </IconButton>
+      <Drawer
+        className=''
+        variant="persistent"
+        anchor="left"
+        open={open}
+        sx={{with:250}}
+      >
+          <MenuHeader/>
+        </Drawer>
+      </div>
+
       <a href='http://localhost:3000/' target='_blank' rel='noreferrer'>
         <img className='logo' src={logoLight} alt='imgHeader' />
       </a>
-      <div className='menuHeader'>
-        <IconButton
-          aria-controls='simple-menu'
-          aria-haspopup='true'
-          onClick={handleClick}
-				>
-          <MenuIcon/>
-				</IconButton>
-
-        <Menu
-          id='simple-menu'
-          anchorEl={anchorEl}
-          keepMounted
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-				>
-          {contentValue.map((item, index) => {
-            return (
-              <MenuItem>
-                <Typography variant='inherit' noWrap />
-                {item.title}
-              </MenuItem>
-            )
-          })}
-        </Menu>
-      </div>
     </header>
   )
 }

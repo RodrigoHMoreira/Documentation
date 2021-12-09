@@ -16,7 +16,7 @@ export default function ContentDoc () {
       <div className='iconButtonTop'>
         <Link
           activeClass='link'
-          to='docContent'
+          to='/construção-do-bot'
           spy
           smooth
           offset={-120}
@@ -39,7 +39,7 @@ export default function ContentDoc () {
                 className='image'
                 alt='imgContent'
                 onClick={() => {
-                  return setOpen(true), setImage(item.image)
+                  return (setOpen(true), setImage(item.image))
                 }}
 							/>
             </div>

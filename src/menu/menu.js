@@ -49,16 +49,14 @@ export default function MenuDoc () {
 				/>
       </div>
       {contentValue.length === 0
-				? 
-        <div className='erro'>
-            <p>
-              <strong>Não existe opção para "</strong>
-              {searchResult}
-              <strong>"</strong>
-            </p>
+				? <div className='erro'>
+  <p>
+    <strong>Não existe opção para "</strong>
+    {searchResult}
+    <strong>"</strong>
+  </p>
 					</div>
-				: 
-        contentValue.map((item, index) => {
+				: contentValue.map((item, index) => {
   return (
     <Accordion id='topicos' key={index}>
       <div className='title'>
@@ -84,11 +82,12 @@ export default function MenuDoc () {
         </Link>
       </div>
       {item.submenus.map((submenu, submenuIndex) => {
+        
         return (
           <Tooltip title={submenu.title} key={submenuIndex}>
             <div className='item'>
               <Link
-                activeClass='link'
+                activeClass='activeClass'
                 to={submenu.link}
                 spy
                 smooth
@@ -106,6 +105,7 @@ export default function MenuDoc () {
             </div>
           </Tooltip>
         )
+        
       })}
     </Accordion>
   )

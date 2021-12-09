@@ -5,16 +5,16 @@ import './indexRoot.css'
 
 export default function Index () {
   return (
-      <div className='index'>
-        <div className='headerIndex'>
+    <div className='index'>
+      <div className='headerIndex'>
         <HeaderDoc />
       </div>
-        <div className='menuIndex'>
-          <MenuDoc />
-        </div>
-        <div className='contentIndex'>
-          <ContentDoc />
-        </div>
-        </div>
+      <div className='menuIndex'>
+        <MenuDoc />
+      </div>
+      <div className='contentIndex'>
+        <ContentDoc />
+      </div>
+    </div>
   )
 }

@@ -2,7 +2,7 @@
   {
     "title": "Construção do Bot",
     "link": "/construção-do-bot",
-    "image": "https://imgur.com/awaGG1f.png",
+    "image": "https://imgur.com/lBMQTEZ.png",
     "text": "Para iniciarmos, precisamos compreender o que é um Chatbot, e qual a sua função. Um Chatbot é um sistema de criação de inteligência artificial, que produz respostas automáticas para seus usuários, dentro de um chat de mensagens. Dessa forma, é integrado a empresas, hospitais, cafeterias e demais comércios. Personalizado a sua maneira, e inserido aonde desejar.Entretanto, para que a Integração seja concebida é necessário saber como funciona cada parte de uma “criação”. Vamos lá?!",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -23,7 +23,7 @@
   {
     "title": "Desenvolver Conversa",
     "link": "/desenvolver-conversa",
-    "image": "https://imgur.com/AQRJzwC.png",
+    "image": "https://imgur.com/wm7Re1e.png",
     "text": "Neste campo, a Inteligência artificial guarda informações acrescentadas nos “balões-chat”, cria um fluxo de conversas e aguarda a resposta do usuário/cliente.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -46,15 +46,9 @@
         "text2": ""
       },
       {
-        "title": "Setas (^)",
-        "link": "/setas(^)",
-        "text1": "Após realizar qualquer alteração, ou criar um novo bloco, o usuário precisa clicar no botão “SALVAR”, para que seu trabalho seja salvo, caso contrário as informações adicionadas ao chat, não serão aplicadas.",
-        "text2": ""
-      },
-      {
         "title": "Salvar",
         "link": "/salvar",
-        "text1": "Ao adicionar ($) ao início de uma palavra-chave, o usuário cria uma variável. Classificado com a cor verde, está opção comunica ao bot, que aquele bloco necessita de uma resposta do cliente, ou seja, o cliente só sairá do mesmo, caso a variável seja respondida. Se o tempo expirar, ou não houver resposta, o cliente será redirecionado para outro bloco. Exemplo: Abandono.",
+        "text1": "Após realizar qualquer alteração, ou criar um novo bloco, o usuário precisa clicar no botão “SALVAR”, para que seu trabalho seja salvo, caso contrário as informações adicionadas ao chat, não serão aplicadas.",
         "text2": ""
       },
       {
@@ -68,7 +62,7 @@
   {
     "title": "Criar Condições",
     "link": "/criar-condições",
-    "image": "https://imgur.com/sU4RxzP.png",
+    "image": "https://imgur.com/sDtuF2i.png",
     "text": "As condições servem para criar uma organização estável em seu chat, determina ações transferindo o cliente de um bloco para outro. Dessa forma seu projeto não se transforma em uma verdadeira bagunça.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -89,7 +83,7 @@
   {
     "title": "Tempo de expiração",
     "link": "/tempo-de-expiração",
-    "image": "https://imgur.com/XgQinWJ.png",
+    "image": "https://imgur.com/tubSB9Y.png",
     "text": "Neste tópico, como o significado literal da palavra, o usuário pode adicionar um “tempo-limite” para cada bloco criado, caso o cliente não responda à pergunta.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -104,7 +98,7 @@
   {
     "title": "Testar seu Chatbot",
     "link": "/testar-seu-chatbot",
-    "image": "https://imgur.com/8k8StYR.png",
+    "image": "https://imgur.com/wneqTjE.png",
     "text": "Já imaginou criar um projeto com a visão de vendedor e consumidor? Com está opção é possível!",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
@@ -119,7 +113,7 @@
   {
     "title": "Opções de entrada e saída",
     "link": "/opções-de-entrada-e-saída",
-    "image": "https://imgur.com/mfLLx4W.png",
+    "image": "https://imgur.com/nIz1jP3.png",
     "text": "As opções de entrada e saída servem para receber e enviar dados ou até para criar um comando novo.",
     "video": "https://player.vimeo.com/video/644503644?h=055e5793bc",
     "submenus": [
